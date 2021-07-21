@@ -1,0 +1,21 @@
+ProjectTitle: DrZhuravsky
+
+PageList:
+- file: index.html
+  titleName: Home
+  ready: 1
+- file: meet.html
+  titleName: Meet The Doctor
+  ready: 0
+- file: about.html
+  titleName: About
+  ready: 0
+- file: procedures.html
+  titleName: Procedures
+  ready: 0
+- file: gallery.html
+  titleName: Gallery
+  ready: 0
+- file: contact.html
+  titleName: Contact
+  ready: 0
