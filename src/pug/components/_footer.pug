@@ -3,5 +3,42 @@
 footer#footer.footer
   .c-grid
     .footer__wrapper
+      .footer__wrapper-left
+
+        .logo.logo--footer
+          a.logo__btn(href="#")
+            img.logo__img(src="img/logo.svg" alt="")
+
+      .footer__wrapper-right
+
+        .footer__social
+          ul
+            li
+              a(href="#")
+                i.icon-font.icon-facebook
+            li
+              a(href="#")
+                i.icon-font.icon-instagram
+            li
+              a(href="#")
+                i.icon-font.icon-linkedin
+
+        .footer__nav
+          ul
+            li
+              a(href="#") HOME
+            li
+              a(href="#") ABOUT
+            li
+              a(href="#") PROCEDURES
+            li
+              a(href="#") GALLERY
+            li
+              a(href="#") CONTACT
+
+        .footer__copyrights
+          p Copyright © 2021 Dr. Ruslan Zhuravsky. All Rights Reserved.
+          p!= "<a href='#'>Sitemap</a> | <a href='#'>HIPAA Privacy Policy</a> | <a href='#'>Privacy Policy</a> | <a href='#'>Terms & Conditions</a>"
+          p!= "Medical Marketing by <strong>MRKTMADE</strong>"
 
 // FOOTER :: END

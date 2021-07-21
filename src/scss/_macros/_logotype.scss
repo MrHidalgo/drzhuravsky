@@ -1,5 +1,18 @@
 // LOGOTYPE :: START
 
-.logo {}
+.logo {
+	display: flex;
+
+	&__btn {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
 
 // LOGOTYPE :: END
