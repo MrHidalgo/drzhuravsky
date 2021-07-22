@@ -1,12 +1,14 @@
 // TITLE :: START
 
 .c-title {
-  &__text {
-    &-wrap {}
-  }
+  font-family: 'Didot', sans-serif;
+  font-size: 80px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000000;
 
-  &__icon {
-    &-wrap {}
+  &.c-title--white {
+    color: #ffffff;
   }
 }
 

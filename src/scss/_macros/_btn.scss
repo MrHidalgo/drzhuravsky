@@ -1,57 +1,56 @@
 // BUTTON :: START
 
-// ==================================================
-// ==================================================
-// ==================================================
-
-$bth-width: 250px;
-$bth-height: 45px;
-$btn-border-width: 1px;
-$btn-border-color: rgba(#000, 1);
-$bth-border-radius: 5px;
-$bth-box-shadow: none;
-$bth-background-color: rgba(#000, 1);
-$bth-color: rgba(#fff, 1);
-$bth-font-size: rgba(#000, 1);
-$bth-font-weight: bold;
-
-$btn-color--border: rgba(#000, 1);
-
-// ==================================================
-// ==================================================
-// ==================================================
-
 .c-btn {
   outline: none;
   cursor: pointer;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: $bth-width;
-  height: $bth-height;
-  border: $btn-border-width solid $btn-border-color;
-  box-shadow: $bth-box-shadow;
-  border-radius: $bth-border-radius;
-  color: $bth-color;
-  font-size: $bth-font-size;
-  font-weight: $bth-font-weight;
+  width: auto;
+  min-width: 260px;
+  height: 69px;
+  border: 1px solid #c09d55;
+  background-color: transparent;
 
-  &--border {
-    background-color: transparent;
-    color: $btn-color--border;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    width: calc(100% - 44px);
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c09d55;
   }
 
-  &--bg {
-    background-color: $bth-background-color;
+  &:before {
+    top: -6px;
   }
 
-  &__text {
-    &-wrap {}
+  &:after {
+    bottom: -6px;
   }
 
-  &__icon {
-    &-wrap {}
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &--center {
+      justify-content: center;
+    }
+  }
+
+  span {
+    position: relative;
+    top: -1px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
   }
 }
 

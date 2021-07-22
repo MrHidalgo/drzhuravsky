@@ -35,9 +35,10 @@
 /// ===============
 @import "_macros/logotype";
 //@import "_macros/nav";
-//@import "_macros/title";
+@import "_macros/label";
+@import "_macros/title";
 //@import "_macros/subtitle";
-//@import "_macros/btn";
+@import "_macros/btn";
 //@import "_macros/modal";
 //@import "_macros/form";
 ///
@@ -45,4 +46,5 @@
 /// ===============
 @import "_components/common/header";
 @import "_components/common/footer";
+@import "_components/common/gallery";
 @import "_components/common/request";
