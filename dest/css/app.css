@@ -1312,6 +1312,27 @@ picture {
 }
 
 /* line 6, src/scss/_components/common/_gallery.scss */
+.p-about .gallery {
+  margin-bottom: 170px;
+  margin-bottom: 75px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 6, src/scss/_components/common/_gallery.scss */
+  .p-about .gallery {
+    margin-bottom: -webkit-calc(75px + 95 * (100vw - 320px) / 1600);
+    margin-bottom: calc(75px + 95 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 6, src/scss/_components/common/_gallery.scss */
+  .p-about .gallery {
+    margin-bottom: 170px;
+  }
+}
+
+/* line 11, src/scss/_components/common/_gallery.scss */
 .gallery__bg {
   z-index: 0;
   position: absolute;
@@ -1321,7 +1342,7 @@ picture {
   height: 100%;
 }
 
-/* line 14, src/scss/_components/common/_gallery.scss */
+/* line 19, src/scss/_components/common/_gallery.scss */
 .gallery__bg:after {
   content: '';
   position: absolute;
@@ -1336,7 +1357,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 14, src/scss/_components/common/_gallery.scss */
+  /* line 19, src/scss/_components/common/_gallery.scss */
   .gallery__bg:after {
     background-image: none;
     background-color: #757374;
@@ -1344,13 +1365,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 28, src/scss/_components/common/_gallery.scss */
+  /* line 33, src/scss/_components/common/_gallery.scss */
   .gallery__bg img {
     display: none;
   }
 }
 
-/* line 36, src/scss/_components/common/_gallery.scss */
+/* line 41, src/scss/_components/common/_gallery.scss */
 .gallery__wrapper {
   z-index: 2;
   position: relative;
@@ -1359,7 +1380,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 36, src/scss/_components/common/_gallery.scss */
+  /* line 41, src/scss/_components/common/_gallery.scss */
   .gallery__wrapper {
     padding-top: -webkit-calc(75px + 128 * (100vw - 320px) / 1600);
     padding-top: calc(75px + 128 * (100vw - 320px) / 1600);
@@ -1367,14 +1388,14 @@ picture {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 36, src/scss/_components/common/_gallery.scss */
+  /* line 41, src/scss/_components/common/_gallery.scss */
   .gallery__wrapper {
     padding-top: 203px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 36, src/scss/_components/common/_gallery.scss */
+  /* line 41, src/scss/_components/common/_gallery.scss */
   .gallery__wrapper {
     padding-bottom: -webkit-calc(75px + 120 * (100vw - 320px) / 1600);
     padding-bottom: calc(75px + 120 * (100vw - 320px) / 1600);
@@ -1382,33 +1403,33 @@ picture {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 36, src/scss/_components/common/_gallery.scss */
+  /* line 41, src/scss/_components/common/_gallery.scss */
   .gallery__wrapper {
     padding-bottom: 195px;
   }
 }
 
-/* line 44, src/scss/_components/common/_gallery.scss */
+/* line 49, src/scss/_components/common/_gallery.scss */
 .gallery__wrapper > div {
   width: 100%;
   max-width: 730px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 44, src/scss/_components/common/_gallery.scss */
+  /* line 49, src/scss/_components/common/_gallery.scss */
   .gallery__wrapper > div {
     max-width: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 44, src/scss/_components/common/_gallery.scss */
+  /* line 49, src/scss/_components/common/_gallery.scss */
   .gallery__wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 56, src/scss/_components/common/_gallery.scss */
+/* line 61, src/scss/_components/common/_gallery.scss */
 .gallery__desc {
   width: 100%;
   max-width: 674px;
@@ -1416,7 +1437,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 56, src/scss/_components/common/_gallery.scss */
+  /* line 61, src/scss/_components/common/_gallery.scss */
   .gallery__desc {
     padding-bottom: 40px;
   }

@@ -3,6 +3,11 @@
 .gallery {
 	position: relative;
 
+	.p-about & {
+		margin-bottom: 170px;
+		@include fluid(margin-bottom, 320px, 1920px, 75px, 170px);
+	}
+
 	&__bg {
 		z-index: 0;
 		position: absolute;
