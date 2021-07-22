@@ -3,11 +3,18 @@
 .c-label {
 	display: flex;
 	font-weight: 900;
-	font-size: 16px;
+	//font-size: 16px;
+	//line-height: 38px;
 	letter-spacing: 0.2em;
-	line-height: 38px;
 	text-transform: uppercase;
 	color: #c69c47;
+	@include fluid(font-size, 320px, 1920px, 13px, 16px);
+	@include fluid(line-height, 320px, 1920px, 20px, 38px);
+	@include adaptive(767) {
+		justify-content: center;
+		padding-bottom: 10px;
+		text-align: center;
+	}
 }
 
 // TITLE :: END

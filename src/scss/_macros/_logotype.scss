@@ -3,6 +3,12 @@
 .logo {
 	display: flex;
 
+	&.logo--footer {
+		@include adaptive(1023) {
+			justify-content: center;
+		}
+	}
+
 	&__btn {
 		display: flex;
 		align-items: flex-start;

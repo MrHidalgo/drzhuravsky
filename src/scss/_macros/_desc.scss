@@ -1,0 +1,18 @@
+// TITLE :: START
+
+.c-desc {
+	//font-size: 18px;
+	//line-height: 38px;
+	color: #000;
+	@include fluid(font-size, 320px, 1920px, 14px, 18px);
+	@include fluid(line-height, 320px, 1920px, 24px, 38px);
+	@include adaptive(767) {
+		text-align: center;
+	}
+
+	&.c-desc--white {
+		color: #ffffff;
+	}
+}
+
+// TITLE :: END

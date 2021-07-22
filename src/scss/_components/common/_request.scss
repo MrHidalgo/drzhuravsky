@@ -2,8 +2,10 @@
 
 .request {
 	position: relative;
-	padding-top: 57px;
-	padding-bottom: 57px;
+	//padding-top: 57px;
+	//padding-bottom: 57px;
+	@include fluid(padding-top, 320px, 1920px, 25px, 57px);
+	@include fluid(padding-bottom, 320px, 1920px, 25px, 57px);
 
 	&__bg {
 		z-index: 0;
@@ -14,18 +16,30 @@
 		height: 100%;
 		background-color: transparent;
 		border: 10px solid #c09d55;
+		@include adaptive(1439) {
+			left: 50px;
+			width: calc(100% - 100px);
+			border-width: 8px;
+		}
+		@include adaptive(767) {
+			left: 20px;
+			width: calc(100% - 40px);
+			border-width: 5px;
+		}
 	}
 
 	&__wrapper {
 		z-index: 2;
 		position: relative;
-		padding-top: 235px;
-		padding-bottom: 235px;
+		//padding-top: 235px;
+		//padding-bottom: 235px;
 		background-color: #e5e5e5;
 		background-image: url('../img/img-request-bg.png');
 		background-repeat: no-repeat;
 		background-position: center bottom;
 		background-size: cover;
+		@include fluid(padding-top, 320px, 1920px, 100px, 235px);
+		@include fluid(padding-bottom, 320px, 1920px, 100px, 235px);
 	}
 
 	&__content {
@@ -34,29 +48,32 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		max-width: 1206px;
-		height: 195px;
+		//max-width: 1206px;
+		//height: 195px;
+		//padding-top: 40px;
+		//padding-bottom: 40px;
 		margin-left: auto;
 		margin-right: auto;
 		border: 5px solid #c09d55;
 		backdrop-filter: blur(30px);
 		background-color: rgba(255, 255, 255, 0.15);
+		@include fluid(max-width, 320px, 1920px, 290px, 1206px);
+		@include fluid(padding-top, 320px, 1920px, 20px, 40px);
+		@include fluid(padding-bottom, 320px, 1920px, 20px, 40px);
+		@include adaptive(767) {
+			max-width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 
 	&__title {
-		font-family: 'Didot', sans-serif;
-		font-size: 80px;
-		line-height: 1;
 		text-align: center;
-		color: #000;
-		text-transform: uppercase;
+		@include fluid(font-size, 320px, 1920px, 35px, 80px);
 	}
 
 	&__desc {
-		font-size: 18px;
-		line-height: 38px;
 		text-align: center;
-		color: #000;
 	}
 }
 

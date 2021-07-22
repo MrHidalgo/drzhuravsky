@@ -2,10 +2,15 @@
 
 .c-title {
   font-family: 'Didot', sans-serif;
-  font-size: 80px;
+  //font-size: 80px;
   line-height: 1;
   text-transform: uppercase;
   color: #000000;
+  @include fluid(font-size, 320px, 1920px, 37px, 80px);
+  @include adaptive(767) {
+    padding-bottom: 20px;
+    text-align: center;
+  }
 
   &.c-title--white {
     color: #ffffff;

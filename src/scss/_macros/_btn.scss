@@ -8,10 +8,42 @@
   align-items: center;
   justify-content: center;
   width: auto;
-  min-width: 260px;
-  height: 69px;
+  //min-width: 260px;
+  //height: 69px;
   border: 1px solid #c09d55;
+  border-radius: 0;
+  box-shadow: none;
   background-color: transparent;
+  @include fluid(min-width, 320px, 1920px, 200px, 260px);
+  @include fluid(height, 320px, 1920px, 49px, 69px);
+  @include transition(background-color);
+
+  &:hover {
+    //background-color: #c09d55;
+    //@include transition(background-color);
+
+    &:before,
+    &:after {
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 50%;
+      @include transition(top, bottom, left, right, width, height);
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+
+    span {
+      color: #ffffff;
+      @include transition(color);
+    }
+  }
 
   &:before,
   &:after {
@@ -24,6 +56,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: #c09d55;
+    @include transition(top, bottom, left, right, width, height);
   }
 
   &:before {
@@ -37,6 +70,9 @@
   &__wrapper {
     display: flex;
     align-items: center;
+		@include adaptive(767) {
+			justify-content: center;
+		}
 
     &--center {
       justify-content: center;
@@ -44,19 +80,29 @@
   }
 
   &.c-btn--textDark {
+
+    &:hover {
+      span {
+        color: #ffffff;
+      }
+    }
+
     span {
       color: #000000;
     }
   }
 
   span {
+    z-index: 2;
     position: relative;
     top: -1px;
     font-weight: bold;
-    font-size: 16px;
+    //font-size: 16px;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    @include fluid(font-size, 320px, 1920px, 14px, 16px);
+    @include transition(color);
   }
 }
 
