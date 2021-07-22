@@ -23,6 +23,9 @@
 
 		img {
 			@extend %imageResCoverAbs;
+			left: auto;
+			right: 0;
+			width: 70%;
 		}
 	}
 

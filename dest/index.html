@@ -30,27 +30,15 @@
     <!-- STYLE :: END-->
   </head>
   <body>
-    <!-- HEADER :: START-->
-    <header class="header" id="header">
-      <div class="header__wrapper">
-        <div class="header__wrapper-left">
-          <div class="logo logo--header"><a class="logo__btn" href="#"> <img class="logo__img" src="img/logo.svg" alt=""></a></div>
-        </div>
-        <div class="header__wrapper-middle"><a class="header__contact" href="#">MIAMI, FL | 732.851.1231</a></div>
-        <div class="header__wrapper-right"><a class="header__request" href="#"><span>REQUEST CONSULTATION</span><i class="icon-font icon-arrow"></i></a>
-          <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- HEADER :: END-->
+    <!--block header
+    include ../components/common/_header
+    
+    
+    -->
     <div class="body p-home">
       <!-- SECTION :: START-->
       <section class="gallery" id="gallery">
-        <div class="gallery__bg"><img src="img/img-gallery.png" srcset="img/img-gallery@2x.png 2x" alt=""></div>
+        <div class="gallery__bg"><img src="img/img-gallery.png" alt=""></div>
         <div class="c-grid">
           <div class="gallery__wrapper">
             <div>
@@ -58,6 +46,28 @@
               <h2 class="gallery__title c-title c-title--white">Photo Gallery</h2>
               <p class="gallery__desc">Feel free to look through Dr. Ruslan Zhuravsky’s gallery to view his work and artistry on facial procedures like Rhinoplasty, Face Lift, and more.</p>
               <div class="gallery__btn c-btn__wrapper"><a class="c-btn" href="#"><span>READ MORE</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
+      <!-- SECTION :: START-->
+      <section class="stories" id="stories">
+        <div class="stories__bg">
+          <div class="stories__bg-pattern"></div>
+        </div>
+        <div class="c-grid">
+          <div class="stories__wrapper">
+            <div class="stories__wrapper-left">
+              <div class="stories__content">
+                <p class="stories__label c-label">Real Patients. Real Results.</p>
+                <h2 class="stories__title c-title">PATIENT STORIES</h2>
+                <p class="stories__desc">Dr. Z highlights one of his patient’s each month. These patients receive a professional photoshoot to showcase their incredible results. Take a look to see the aesthetic transformation possible at Z Facial Plastics.</p>
+                <div class="gallery__btn c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>READ MORE</span></a></div>
+              </div>
+            </div>
+            <div class="stories__wrapper-right">
+              <div class="stories__img"><img src="img/img-stories.png" alt=""></div>
             </div>
           </div>
         </div>

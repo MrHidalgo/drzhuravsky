@@ -43,6 +43,12 @@
     }
   }
 
+  &.c-btn--textDark {
+    span {
+      color: #000000;
+    }
+  }
+
   span {
     position: relative;
     top: -1px;

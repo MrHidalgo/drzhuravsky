@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.gallery__bg img {
+.gallery__bg img, .stories__img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -583,7 +583,12 @@ picture {
           justify-content: center;
 }
 
-/* line 46, src/scss/_macros/_btn.scss */
+/* line 47, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--textDark span {
+  color: #000000;
+}
+
+/* line 52, src/scss/_macros/_btn.scss */
 .c-btn span {
   position: relative;
   top: -1px;
@@ -912,7 +917,14 @@ picture {
   background: linear-gradient(to right, #757374 40%, rgba(0, 0, 0, 0) 75%);
 }
 
-/* line 29, src/scss/_components/common/_gallery.scss */
+/* line 24, src/scss/_components/common/_gallery.scss */
+.gallery__bg img {
+  left: auto;
+  right: 0;
+  width: 70%;
+}
+
+/* line 32, src/scss/_components/common/_gallery.scss */
 .gallery__wrapper {
   z-index: 2;
   position: relative;
@@ -920,13 +932,13 @@ picture {
   padding-bottom: 195px;
 }
 
-/* line 35, src/scss/_components/common/_gallery.scss */
+/* line 38, src/scss/_components/common/_gallery.scss */
 .gallery__wrapper > div {
   width: 100%;
   max-width: 730px;
 }
 
-/* line 41, src/scss/_components/common/_gallery.scss */
+/* line 44, src/scss/_components/common/_gallery.scss */
 .gallery__desc {
   width: 100%;
   max-width: 674px;
@@ -934,6 +946,110 @@ picture {
   font-size: 18px;
   line-height: 38px;
   color: #fff;
+}
+
+/* line 3, src/scss/_components/common/_stories.scss */
+.stories {
+  position: relative;
+  padding-top: 265px;
+  padding-bottom: 310px;
+}
+
+/* line 8, src/scss/_components/common/_stories.scss */
+.stories__bg {
+  z-index: 0;
+  position: absolute;
+  top: 134px;
+  right: 0;
+  width: 50%;
+  height: -webkit-calc(100% - (134px + 143px));
+  height: calc(100% - (134px + 143px));
+}
+
+/* line 16, src/scss/_components/common/_stories.scss */
+.stories__bg-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 676px;
+  height: 100%;
+  background-image: url("../img/img-bg-pattern.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 30, src/scss/_components/common/_stories.scss */
+.stories__wrapper {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 36, src/scss/_components/common/_stories.scss */
+.stories__wrapper-left, .stories__wrapper-right {
+  width: 100%;
+  max-width: 50%;
+}
+
+/* line 42, src/scss/_components/common/_stories.scss */
+.stories__wrapper-right {
+  padding-left: 155px;
+}
+
+/* line 47, src/scss/_components/common/_stories.scss */
+.stories__content {
+  width: 100%;
+  max-width: 819px;
+}
+
+/* line 52, src/scss/_components/common/_stories.scss */
+.stories__title {
+  padding-bottom: 20px;
+}
+
+/* line 56, src/scss/_components/common/_stories.scss */
+.stories__desc {
+  padding-bottom: 58px;
+}
+
+/* line 60, src/scss/_components/common/_stories.scss */
+.stories__img {
+  position: relative;
+  width: 100%;
+  max-width: 597px;
+  height: 648px;
+}
+
+/* line 66, src/scss/_components/common/_stories.scss */
+.stories__img:before {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-38px, 38px);
+      -ms-transform: translate(-38px, 38px);
+          transform: translate(-38px, 38px);
+  width: 100%;
+  height: 100%;
+  border: 10px solid #c09d55;
+}
+
+/* line 78, src/scss/_components/common/_stories.scss */
+.stories__img img {
+  z-index: 2;
+  -webkit-filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
 }
 
 /* line 3, src/scss/_components/common/_request.scss */
@@ -963,9 +1079,9 @@ picture {
   padding-top: 235px;
   padding-bottom: 235px;
   background-color: #e5e5e5;
-  background-image: url("../img/img-request-bg@2x.png");
+  background-image: url("../img/img-request-bg.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   -webkit-background-size: cover;
           background-size: cover;
 }
