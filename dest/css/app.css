@@ -1697,7 +1697,12 @@ picture {
   }
 }
 
-/* line 10, src/scss/_components/common/_stories.scss */
+/* line 12, src/scss/_components/common/_stories.scss */
+.stories.stories--practice .stories__content {
+  max-width: 681px;
+}
+
+/* line 18, src/scss/_components/common/_stories.scss */
 .stories__bg {
   z-index: 0;
   position: absolute;
@@ -1709,13 +1714,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 10, src/scss/_components/common/_stories.scss */
+  /* line 18, src/scss/_components/common/_stories.scss */
   .stories__bg {
     display: none;
   }
 }
 
-/* line 21, src/scss/_components/common/_stories.scss */
+/* line 29, src/scss/_components/common/_stories.scss */
 .stories__bg-pattern {
   position: absolute;
   top: 0;
@@ -1731,7 +1736,7 @@ picture {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 21, src/scss/_components/common/_stories.scss */
+  /* line 29, src/scss/_components/common/_stories.scss */
   .stories__bg-pattern {
     max-width: -webkit-calc(276px + 400 * (100vw - 768px) / 1152);
     max-width: calc(276px + 400 * (100vw - 768px) / 1152);
@@ -1739,13 +1744,13 @@ picture {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 21, src/scss/_components/common/_stories.scss */
+  /* line 29, src/scss/_components/common/_stories.scss */
   .stories__bg-pattern {
     max-width: 676px;
   }
 }
 
-/* line 36, src/scss/_components/common/_stories.scss */
+/* line 44, src/scss/_components/common/_stories.scss */
 .stories__wrapper {
   z-index: 2;
   position: relative;
@@ -1760,7 +1765,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 36, src/scss/_components/common/_stories.scss */
+  /* line 44, src/scss/_components/common/_stories.scss */
   .stories__wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1768,20 +1773,20 @@ picture {
   }
 }
 
-/* line 45, src/scss/_components/common/_stories.scss */
+/* line 53, src/scss/_components/common/_stories.scss */
 .stories__wrapper-left, .stories__wrapper-right {
   width: 100%;
   max-width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 45, src/scss/_components/common/_stories.scss */
+  /* line 53, src/scss/_components/common/_stories.scss */
   .stories__wrapper-left, .stories__wrapper-right {
     max-width: 100%;
   }
 }
 
-/* line 54, src/scss/_components/common/_stories.scss */
+/* line 62, src/scss/_components/common/_stories.scss */
 .stories__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1791,49 +1796,49 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 54, src/scss/_components/common/_stories.scss */
+  /* line 62, src/scss/_components/common/_stories.scss */
   .stories__wrapper-right {
     padding-left: 100px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 54, src/scss/_components/common/_stories.scss */
+  /* line 62, src/scss/_components/common/_stories.scss */
   .stories__wrapper-right {
     padding-left: 50px;
     padding-top: 40px;
   }
 }
 
-/* line 67, src/scss/_components/common/_stories.scss */
+/* line 75, src/scss/_components/common/_stories.scss */
 .stories__content {
   width: 100%;
   max-width: 819px;
 }
 
-/* line 72, src/scss/_components/common/_stories.scss */
+/* line 80, src/scss/_components/common/_stories.scss */
 .stories__title {
   padding-bottom: 20px;
 }
 
-/* line 76, src/scss/_components/common/_stories.scss */
+/* line 84, src/scss/_components/common/_stories.scss */
 .stories__desc {
   padding-bottom: 58px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 76, src/scss/_components/common/_stories.scss */
+  /* line 84, src/scss/_components/common/_stories.scss */
   .stories__desc {
     padding-bottom: 40px;
   }
 }
 
-/* line 83, src/scss/_components/common/_stories.scss */
+/* line 91, src/scss/_components/common/_stories.scss */
 .stories__img {
   position: relative;
 }
 
-/* line 86, src/scss/_components/common/_stories.scss */
+/* line 94, src/scss/_components/common/_stories.scss */
 .stories__img:before {
   z-index: 0;
   content: '';
@@ -1849,13 +1854,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 86, src/scss/_components/common/_stories.scss */
+  /* line 94, src/scss/_components/common/_stories.scss */
   .stories__img:before {
     border-width: 5px;
   }
 }
 
-/* line 101, src/scss/_components/common/_stories.scss */
+/* line 109, src/scss/_components/common/_stories.scss */
 .stories__img img {
   z-index: 2;
   position: relative;
