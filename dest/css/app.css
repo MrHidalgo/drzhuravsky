@@ -570,6 +570,11 @@ picture {
   }
 }
 
+/* line 19, src/scss/_macros/_label.scss */
+.c-label span {
+  font-weight: 300;
+}
+
 /* line 3, src/scss/_macros/_title.scss */
 .c-title {
   font-family: 'Didot', sans-serif;
@@ -2094,6 +2099,135 @@ picture {
 /* line 75, src/scss/_components/common/_request.scss */
 .request__desc {
   text-align: center;
+}
+
+/* line 3, src/scss/_components/gallery/_results.scss */
+.results {
+  padding-top: 60px;
+  padding-bottom: 125px;
+}
+
+/* line 7, src/scss/_components/gallery/_results.scss */
+.results__label {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 81px;
+  color: #000000;
+  text-align: center;
+}
+
+/* line 14, src/scss/_components/gallery/_results.scss */
+.results__title {
+  padding-bottom: 38px;
+  text-align: center;
+}
+
+/* line 19, src/scss/_components/gallery/_results.scss */
+.results__desc {
+  width: 100%;
+  max-width: 812px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 143px;
+  text-align: center;
+}
+
+/* line 28, src/scss/_components/gallery/_results.scss */
+.results__box {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 32, src/scss/_components/gallery/_results.scss */
+.results__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 37, src/scss/_components/gallery/_results.scss */
+.results__box-row {
+  position: relative;
+  left: -155px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: -webkit-calc(100% + 155px);
+  width: calc(100% + 155px);
+}
+
+/* line 44, src/scss/_components/gallery/_results.scss */
+.results__box-row:nth-of-type(even) {
+  padding-left: 140px;
+}
+
+/* line 48, src/scss/_components/gallery/_results.scss */
+.results__box-row > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-left: 155px;
+  padding-bottom: 130px;
+}
+
+/* line 56, src/scss/_components/gallery/_results.scss */
+.results__box-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+/* line 60, src/scss/_components/gallery/_results.scss */
+.results__box-img:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #c09d55;
+  -webkit-transform: translate(-40px, 40px);
+      -ms-transform: translate(-40px, 40px);
+          transform: translate(-40px, 40px);
+}
+
+/* line 72, src/scss/_components/gallery/_results.scss */
+.results__box-img img {
+  display: block;
+  max-height: 100%;
+  height: auto;
+}
+
+/* line 79, src/scss/_components/gallery/_results.scss */
+.results__box-title {
+  position: absolute;
+  left: 47px;
+  bottom: 27px;
+  width: -webkit-calc(100% - 94px);
+  width: calc(100% - 94px);
+  font-family: 'Didot', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  color: #000;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
