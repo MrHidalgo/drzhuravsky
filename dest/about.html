@@ -30,11 +30,25 @@
     <!-- STYLE :: END-->
   </head>
   <body>
-    <!--block header
-    include ../components/common/_header
-    
-    
-    -->
+    <!-- HEADER :: START-->
+    <header class="header" id="header">
+      <div class="c-grid">
+        <div class="header__wrapper">
+          <div class="header__wrapper-left">
+            <div class="logo logo--header"><a class="logo__btn" href="#"><img class="logo__img" src="img/logo.svg" alt=""></a></div>
+          </div>
+          <div class="header__wrapper-middle"><a class="header__contact" href="#">MIAMI, FL | 732.851.1231</a></div>
+          <div class="header__wrapper-right"><a class="header__request" href="#"><span>REQUEST CONSULTATION</span><i class="icon-font icon-arrow"></i></a>
+            <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER :: END-->
     <div class="body p-about">
       <main class="main main--about" id="main">
         <div class="main__bg"><img class="main__bg-img" src="img/img-main-about.png" alt=""/>
@@ -121,8 +135,45 @@
       </div>
     </footer>
     <!-- FOOTER :: END-->
+    <!-- SECTION :: START-->
+    <section class="menu" id="menu" mobile-block-js>
+      <div class="menu__overlay"></div>
+      <div class="menu__container">
+        <div class="menu__wrapper">
+          <div class="menu__wrapper-top"></div>
+          <div class="menu__wrapper-middle">
+            <div>
+              <nav class="menu__btn-wrapper"><a class="menu__btn" href="#" data-id="1"><span>Home</span><i class="icon-font icon-corner"></i></a><a class="menu__btn" href="#" data-id="2"><span>About</span><i class="icon-font icon-corner"></i></a><a class="menu__btn" href="#" data-id="3"><span>Procedures</span><i class="icon-font icon-corner"></i></a><a class="menu__btn" href="#" data-id="4"><span>Gallery</span><i class="icon-font icon-corner"></i></a><a class="menu__btn" href="#" data-id="5"><span>Contact</span><i class="icon-font icon-corner"></i></a></nav>
+            </div>
+            <div>
+              <div class="menu__content-wrapper">
+                <div class="menu__content" data-content-id="1"></div>
+                <div class="menu__content" data-content-id="2"></div>
+                <div class="menu__content" data-content-id="3"></div>
+                <div class="menu__content" data-content-id="4"></div>
+                <div class="menu__content" data-content-id="5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__wrapper-bottom">
+            <div><a class="header__contact" href="#">MIAMI, FL | 732.851.1231</a><a class="header__request" href="#"><span>REQUEST CONSULTATION</span><i class="icon-font icon-arrow"></i></a></div>
+            <div>
+              <div class="footer__social">
+                <ul>
+                  <li><a href="#"><i class="icon-font icon-facebook"></i></a></li>
+                  <li><a href="#"><i class="icon-font icon-instagram"></i></a></li>
+                  <li><a href="#"><i class="icon-font icon-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION :: END-->
   </body>
   <!-- SCRIPT :: START-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
   <!--script(src="js/vendor.js")-->
   <script src="js/app.js"></script>
   <!-- SCRIPT :: END-->

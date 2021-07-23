@@ -30,14 +30,17 @@
 	@if $filename == arrow {
 		$char: "\E001";
 	}
-	@if $filename == facebook {
+	@if $filename == corner {
 		$char: "\E002";
 	}
-	@if $filename == instagram {
+	@if $filename == facebook {
 		$char: "\E003";
 	}
-	@if $filename == linkedin {
+	@if $filename == instagram {
 		$char: "\E004";
+	}
+	@if $filename == linkedin {
+		$char: "\E005";
 	}
 
 	@return $char;
@@ -56,6 +59,10 @@
 
 .icon-arrow {
 	@include icon(arrow);
+
+}
+.icon-corner {
+	@include icon(corner);
 
 }
 .icon-facebook {

@@ -1,19 +1,24 @@
 // HEADER :: START
 
 .header {
-	z-index: 999;
+	z-index: 9999;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	background-color: #ffffff;
+	@include transition(background-color);
+
+	.is-hideScroll & {
+		background-color: transparent;
+		@include transition(background-color);
+	}
 
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 164px;
-		padding-left: 140px;
-		padding-right: 140px;
 
 		&-left,
 		&-right {
@@ -40,12 +45,30 @@
 		font-size: 18px;
 		line-height: 38px;
 		color: #000;
+		transform: translateX(0);
+		@include transition(opacity, visibility, transform);
+
+		.is-hideScroll & {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateX(-50%);
+			@include transition(opacity, visibility, transform);
+		}
 	}
 
 	&__request {
 		display: flex;
 		align-items: center;
 		margin-right: 45px;
+		transform: translateX(0);
+		@include transition(opacity, visibility, transform);
+
+		.is-hideScroll & {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateX(-50%);
+			@include transition(opacity, visibility, transform);
+		}
 
 		span {
 			font-weight: 600;

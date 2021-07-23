@@ -2,23 +2,24 @@
 
 header#header.header
 
-  .header__wrapper
-    .header__wrapper-left
-      
-      .logo.logo--header
-        a.logo__btn(href="#") 
-          img.logo__img(src="img/logo.svg" alt="")
-      
-    .header__wrapper-middle
+  .c-grid
+    .header__wrapper
+      .header__wrapper-left
 
-      a.header__contact(href="#") MIAMI, FL | 732.851.1231
+        .logo.logo--header
+          a.logo__btn(href="#")
+            img.logo__img(src="img/logo.svg" alt="")
 
-    .header__wrapper-right
+      .header__wrapper-middle
 
-      a.header__request(href="#")
-        span REQUEST CONSULTATION
-        i.icon-font.icon-arrow
+        a.header__contact(href="#") MIAMI, FL | 732.851.1231
 
-      +hamburger()
+      .header__wrapper-right
+
+        a.header__request(href="#")
+          span REQUEST CONSULTATION
+          i.icon-font.icon-arrow
+
+        +hamburger()
 
 // HEADER :: END

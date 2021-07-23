@@ -64,9 +64,11 @@
 /// @include mixinFontFace("SF-Pro-Text", "-Heavy", "../fonts/", 800, otf);
 ///
 /// ===============
-@include mixinFontFace("Muli", "", "../fonts/", normal, woff2 woff ttf svg);
+@include mixinFontFace("Muli", "-Regular", "../fonts/", normal, woff2 woff ttf svg);
 @include mixinFontFace("Muli", "-Bold", "../fonts/", 700, woff2 woff ttf svg);
 @include mixinFontFace("Muli", "-SemiBold", "../fonts/", 600, woff2 woff ttf svg);
 @include mixinFontFace("Muli", "-Light", "../fonts/", 300, woff2 woff ttf svg);
 @include mixinFontFace("Muli", "-ExtraLight", "../fonts/", 200, woff2 woff ttf svg);
+@include mixinFontFace("Muli", "-ExtraBold", "../fonts/", bold, woff2 woff ttf svg);
+@include mixinFontFace("Muli", "-Black", "../fonts/", 900, woff2 woff ttf svg);
 @include mixinFontFace("Didot", "", "../fonts/", normal, woff2 woff ttf svg);
