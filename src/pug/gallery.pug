@@ -1,11 +1,13 @@
 ---
 title: DrZhuravsky | Gallery
 
-pageClassName: p-home
+pageClassName: p-gallery
 ---
 extends shared/_layout
 
 block content
   div.body(class!= pageClassName)
+
+    +mainSection('gallery', 'img-main-gallery.png', 'BEFORE & AFTERS', 'Gallery')
 
     include components/common/_request

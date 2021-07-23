@@ -1,0 +1,147 @@
+// SECTION :: START
+
+.main {
+	position: relative;
+
+	&.main--main {
+		.main {
+			&__bg {
+				&:after {
+					right: auto;
+					left: 0;
+					max-width: (674px + 89px);
+					border-right: 10px solid #c69c47;
+					transform: translate(47px, 89px);
+				}
+			}
+
+			&__block {
+				display: none;
+			}
+		}
+	}
+
+	&__bg {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 140px;
+		width: calc(100% - 140px);
+		height: 100%;
+
+		&:after {
+			content: '';
+			z-index: -1;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			max-width: (674px - 89px);
+			height: 782px;
+			border-left: 10px solid #c69c47;
+			border-bottom: 10px solid #c69c47;
+			transform: translate(0, 89px);
+		}
+
+		&-img {
+			z-index: 1;
+			@extend %imageResCoverAbs;
+		}
+
+		&-social {
+			z-index: 2;
+			position: absolute;
+			left: -140px;
+			bottom: 0;
+			display: flex;
+			align-items: flex-end;
+			width: 140px;
+			height: 100%;
+			padding-bottom: 205px;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				li {
+					&:not(:last-of-type) {
+						padding-bottom: 30px;
+					}
+				}
+
+				p {
+					white-space: nowrap;
+					transform: translateY(-50px) rotate(-90deg);
+					font-weight: 900;
+					font-size: 16px;
+					letter-spacing: 0.2em;
+					line-height: 38px;
+					color: #000;
+				}
+
+				a {
+					display: flex;
+
+					.icon-font {
+						font-size: 25px;
+						color: #c69c47;
+					}
+				}
+			}
+		}
+	}
+
+	&__wrapper {
+		z-index: 2;
+		position: relative;
+		width: 100%;
+		height: 1037px;
+		padding-left: 140px;
+	}
+
+	&__block {
+		position: relative;
+		top: 60%;
+		transform: translateY(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 1502px;
+		min-height: 197px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 5px solid #c09d55;
+		backdrop-filter: blur(30px);
+		background-color: rgba(255, 255, 255, 0.15);
+
+		&-badge {
+			position: absolute;
+			top: 0;
+			transform: translateY(-50%);
+			left: 0;
+			right: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 397px;
+			height: 39px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #c69c47;
+
+			p {
+				text-align: center;
+				color: #fff;
+			}
+		}
+	}
+
+	&__title {
+		text-align: center;
+		@include fluid(font-size, 320px, 1920px, 40px, 100px);
+	}
+}
+
+// SECTION :: END

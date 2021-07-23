@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.gallery__bg img {
+.main__bg-img, .gallery__bg img {
   position: absolute;
   top: 0;
   left: 0;
@@ -301,9 +301,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+  padding-top: 164px;
 }
 
-/* line 38, src/scss/_shared/_main-setting-reset.scss */
+/* line 39, src/scss/_shared/_main-setting-reset.scss */
 body > .body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -324,7 +325,7 @@ body > .body {
           flex: 1 0 auto;
 }
 
-/* line 44, src/scss/_shared/_main-setting-reset.scss */
+/* line 45, src/scss/_shared/_main-setting-reset.scss */
 body > .body--start {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -332,19 +333,19 @@ body > .body--start {
           justify-content: flex-start;
 }
 
-/* line 51, src/scss/_shared/_main-setting-reset.scss */
+/* line 52, src/scss/_shared/_main-setting-reset.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 54, src/scss/_shared/_main-setting-reset.scss */
+/* line 55, src/scss/_shared/_main-setting-reset.scss */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 61, src/scss/_shared/_main-setting-reset.scss */
+/* line 62, src/scss/_shared/_main-setting-reset.scss */
 button,
 input,
 optgroup,
@@ -354,36 +355,36 @@ textarea {
   margin: 0;
 }
 
-/* line 71, src/scss/_shared/_main-setting-reset.scss */
+/* line 72, src/scss/_shared/_main-setting-reset.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 77, src/scss/_shared/_main-setting-reset.scss */
+/* line 78, src/scss/_shared/_main-setting-reset.scss */
 button[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
 }
 
-/* line 83, src/scss/_shared/_main-setting-reset.scss */
+/* line 84, src/scss/_shared/_main-setting-reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-/* line 89, src/scss/_shared/_main-setting-reset.scss */
+/* line 90, src/scss/_shared/_main-setting-reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 95, src/scss/_shared/_main-setting-reset.scss */
+/* line 96, src/scss/_shared/_main-setting-reset.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 100, src/scss/_shared/_main-setting-reset.scss */
+/* line 101, src/scss/_shared/_main-setting-reset.scss */
 p,
 h1, h2, h3, h4, h5, h6,
 hr {
@@ -391,36 +392,36 @@ hr {
   padding: 0;
 }
 
-/* line 108, src/scss/_shared/_main-setting-reset.scss */
+/* line 109, src/scss/_shared/_main-setting-reset.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 113, src/scss/_shared/_main-setting-reset.scss */
+/* line 114, src/scss/_shared/_main-setting-reset.scss */
 ul li {
   list-style: none;
 }
 
-/* line 119, src/scss/_shared/_main-setting-reset.scss */
+/* line 120, src/scss/_shared/_main-setting-reset.scss */
 a {
   outline: none;
   text-decoration: none;
 }
 
-/* line 124, src/scss/_shared/_main-setting-reset.scss */
+/* line 125, src/scss/_shared/_main-setting-reset.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 131, src/scss/_shared/_main-setting-reset.scss */
+/* line 132, src/scss/_shared/_main-setting-reset.scss */
 input[type="text"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-/* line 135, src/scss/_shared/_main-setting-reset.scss */
+/* line 136, src/scss/_shared/_main-setting-reset.scss */
 picture {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1304,6 +1305,222 @@ picture {
 /* line 181, src/scss/_components/common/_footer.scss */
 .footer__copyrights p strong {
   font-weight: 700;
+}
+
+/* line 3, src/scss/_components/common/_main.scss */
+.main {
+  position: relative;
+}
+
+/* line 9, src/scss/_components/common/_main.scss */
+.main.main--main .main__bg:after {
+  right: auto;
+  left: 0;
+  max-width: 763px;
+  border-right: 10px solid #c69c47;
+  -webkit-transform: translate(47px, 89px);
+      -ms-transform: translate(47px, 89px);
+          transform: translate(47px, 89px);
+}
+
+/* line 18, src/scss/_components/common/_main.scss */
+.main.main--main .main__block {
+  display: none;
+}
+
+/* line 24, src/scss/_components/common/_main.scss */
+.main__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 140px;
+  width: -webkit-calc(100% - 140px);
+  width: calc(100% - 140px);
+  height: 100%;
+}
+
+/* line 32, src/scss/_components/common/_main.scss */
+.main__bg:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 585px;
+  height: 782px;
+  border-left: 10px solid #c69c47;
+  border-bottom: 10px solid #c69c47;
+  -webkit-transform: translate(0, 89px);
+      -ms-transform: translate(0, 89px);
+          transform: translate(0, 89px);
+}
+
+/* line 46, src/scss/_components/common/_main.scss */
+.main__bg-img {
+  z-index: 1;
+}
+
+/* line 51, src/scss/_components/common/_main.scss */
+.main__bg-social {
+  z-index: 2;
+  position: absolute;
+  left: -140px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 140px;
+  height: 100%;
+  padding-bottom: 205px;
+}
+
+/* line 62, src/scss/_components/common/_main.scss */
+.main__bg-social ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 68, src/scss/_components/common/_main.scss */
+.main__bg-social ul li:not(:last-of-type) {
+  padding-bottom: 30px;
+}
+
+/* line 73, src/scss/_components/common/_main.scss */
+.main__bg-social ul p {
+  white-space: nowrap;
+  -webkit-transform: translateY(-50px) rotate(-90deg);
+      -ms-transform: translateY(-50px) rotate(-90deg);
+          transform: translateY(-50px) rotate(-90deg);
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  line-height: 38px;
+  color: #000;
+}
+
+/* line 83, src/scss/_components/common/_main.scss */
+.main__bg-social ul a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 86, src/scss/_components/common/_main.scss */
+.main__bg-social ul a .icon-font {
+  font-size: 25px;
+  color: #c69c47;
+}
+
+/* line 95, src/scss/_components/common/_main.scss */
+.main__wrapper {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 1037px;
+  padding-left: 140px;
+}
+
+/* line 103, src/scss/_components/common/_main.scss */
+.main__block {
+  position: relative;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1502px;
+  min-height: 197px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #c09d55;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* line 119, src/scss/_components/common/_main.scss */
+.main__block-badge {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 397px;
+  height: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c69c47;
+}
+
+/* line 134, src/scss/_components/common/_main.scss */
+.main__block-badge p {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 141, src/scss/_components/common/_main.scss */
+.main__title {
+  text-align: center;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 141, src/scss/_components/common/_main.scss */
+  .main__title {
+    font-size: -webkit-calc(40px + 60 * (100vw - 320px) / 1600);
+    font-size: calc(40px + 60 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 141, src/scss/_components/common/_main.scss */
+  .main__title {
+    font-size: 100px;
+  }
 }
 
 /* line 3, src/scss/_components/common/_gallery.scss */

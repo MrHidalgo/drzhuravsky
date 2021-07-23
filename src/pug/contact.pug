@@ -1,12 +1,14 @@
 ---
 title: DrZhuravsky | Contact
 
-pageClassName: p-home
+pageClassName: p-contact
 ---
 extends shared/_layout
 
 block content
   div.body(class!= pageClassName)
+
+    +mainSection('contact', 'img-main-contact.png', 'QUESTIONS & INQUIRIES', 'CONTACT')
 
     include components/common/_stories
 

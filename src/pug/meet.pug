@@ -8,6 +8,8 @@ extends shared/_layout
 block content
   div.body(class!= pageClassName)
 
+    +mainSection('meet', 'img-main-meet.png', 'MEET THE DOCTOR', 'DR. RUSLAN ZHURAVSKY')
+
     include components/common/_gallery
     include components/common/_stories
     include components/common/_request

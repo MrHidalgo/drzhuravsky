@@ -13,3 +13,31 @@ include ./_mixin/_nav
 include ./_mixin/_form
 
 //- MIXIN :: END
+
+mixin mainSection(classMod, imgName, labelName, titleName)
+	main#main.main(class!= 'main--' + classMod)
+
+		.main__bg
+			img.main__bg-img(src="img/" + imgName alt="")
+
+			.main__bg-social
+				ul
+					li
+						p FOLLOW US
+					li
+						a(href="#")
+							i.icon-font.icon-facebook
+					li
+						a(href="#")
+							i.icon-font.icon-instagram
+					li
+						a(href="#")
+							i.icon-font.icon-linkedin
+
+		.c-grid
+			.main__wrapper
+
+				.main__block
+					.main__block-badge
+						p.c-label!= labelName
+					h1.main__title.c-title!= titleName
