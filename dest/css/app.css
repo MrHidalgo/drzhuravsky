@@ -1312,37 +1312,36 @@ picture {
           justify-content: center;
   font-weight: bold;
   font-size: 16px;
-  line-height: 38px;
   color: #000;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 114, src/scss/_components/common/_footer.scss */
-.footer__nav ul a:after {
+/* line 113, src/scss/_components/common/_footer.scss */
+.footer__nav ul a:before, .footer__nav ul a:after {
   content: '';
-  opacity: 0;
   position: absolute;
   top: 100%;
-  left: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
   background-color: #c09d55;
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform: scale(0.5) translateY(-5px);
-      -ms-transform: scale(0.5) translateY(-5px);
-          transform: scale(0.5) translateY(-5px);
-  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
-/* line 128, src/scss/_components/common/_footer.scss */
+/* line 124, src/scss/_components/common/_footer.scss */
+.footer__nav ul a:before {
+  left: 50%;
+}
+
+/* line 127, src/scss/_components/common/_footer.scss */
+.footer__nav ul a:after {
+  right: 50%;
+}
+
+/* line 131, src/scss/_components/common/_footer.scss */
 .footer__nav ul a:hover {
   color: #c09d55;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1350,20 +1349,15 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 132, src/scss/_components/common/_footer.scss */
-.footer__nav ul a:hover:after {
-  opacity: 1;
-  -webkit-transform: scale(1) translateY(0);
-      -ms-transform: scale(1) translateY(0);
-          transform: scale(1) translateY(0);
-  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+/* line 135, src/scss/_components/common/_footer.scss */
+.footer__nav ul a:hover:before, .footer__nav ul a:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
-/* line 142, src/scss/_components/common/_footer.scss */
+/* line 145, src/scss/_components/common/_footer.scss */
 .footer__copyrights {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1381,7 +1375,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 142, src/scss/_components/common/_footer.scss */
+  /* line 145, src/scss/_components/common/_footer.scss */
   .footer__copyrights {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -1390,7 +1384,7 @@ picture {
   }
 }
 
-/* line 150, src/scss/_components/common/_footer.scss */
+/* line 153, src/scss/_components/common/_footer.scss */
 .footer__copyrights p {
   font-weight: 300;
   font-size: 16px;
@@ -1400,21 +1394,21 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 150, src/scss/_components/common/_footer.scss */
+  /* line 153, src/scss/_components/common/_footer.scss */
   .footer__copyrights p {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 150, src/scss/_components/common/_footer.scss */
+  /* line 153, src/scss/_components/common/_footer.scss */
   .footer__copyrights p {
     font-size: 14px;
     line-height: 30px;
   }
 }
 
-/* line 164, src/scss/_components/common/_footer.scss */
+/* line 167, src/scss/_components/common/_footer.scss */
 .footer__copyrights p a {
   outline: none;
   font-size: 16px;
@@ -1426,14 +1420,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 164, src/scss/_components/common/_footer.scss */
+  /* line 167, src/scss/_components/common/_footer.scss */
   .footer__copyrights p a {
     font-size: 14px;
     line-height: 30px;
   }
 }
 
-/* line 175, src/scss/_components/common/_footer.scss */
+/* line 178, src/scss/_components/common/_footer.scss */
 .footer__copyrights p a:hover {
   color: #c09d55;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1441,7 +1435,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 181, src/scss/_components/common/_footer.scss */
+/* line 184, src/scss/_components/common/_footer.scss */
 .footer__copyrights p strong {
   font-weight: 700;
 }
@@ -2846,6 +2840,81 @@ picture {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
+}
+
+/* line 3, src/scss/_components/contacts/_address.scss */
+.address {
+  position: relative;
+  padding-bottom: 130px;
+}
+
+/* line 8, src/scss/_components/contacts/_address.scss */
+.address__bg img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 17, src/scss/_components/contacts/_address.scss */
+.address__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 22, src/scss/_components/contacts/_address.scss */
+.address__box {
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 130px;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  max-width: 1088px;
+  padding: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #c09d55;
+  background-color: #fff;
+}
+
+/* line 40, src/scss/_components/contacts/_address.scss */
+.address__box > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 47, src/scss/_components/contacts/_address.scss */
+.address__box-title {
+  padding-bottom: 30px;
+  font-size: 60px;
+  text-align: left;
+  color: #000;
+}
+
+/* line 54, src/scss/_components/contacts/_address.scss */
+.address__box-desc {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: left;
+  color: #000;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

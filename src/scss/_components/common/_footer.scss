@@ -107,32 +107,35 @@
 				justify-content: center;
 				font-weight: bold;
 				font-size: 16px;
-				line-height: 38px;
 				color: #000;
 				@include transition(color);
 
+				&:before,
 				&:after {
 					content: '';
-					opacity: 0;
 					position: absolute;
 					top: 100%;
-					left: 0;
-					width: 100%;
+					width: 0;
 					height: 2px;
 					background-color: #c09d55;
-					transform-origin: center;
-					transform: scale(0.5) translateY(-5px);
-					@include transition(opacity, transform);
+					@include transition(width);
+				}
+
+				&:before {
+					left: 50%;
+				}
+				&:after {
+					right: 50%;
 				}
 
 				&:hover {
 					color: #c09d55;
 					@include transition(color);
 
+					&:before,
 					&:after {
-						opacity: 1;
-						transform: scale(1) translateY(0);
-						@include transition(opacity, transform);
+						width: 50%;
+						@include transition(width);
 					}
 				}
 			}
