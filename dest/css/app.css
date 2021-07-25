@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.main__bg-img, .gallery__bg img {
+.main__bg-img, .gallery__bg img, .me__bg > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2541,6 +2541,176 @@ picture {
 /* line 75, src/scss/_components/common/_request.scss */
 .request__desc {
   text-align: center;
+}
+
+/* line 3, src/scss/_components/common/_me.scss */
+.me {
+  position: relative;
+  padding-bottom: 125px;
+}
+
+/* line 7, src/scss/_components/common/_me.scss */
+.me__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-calc(100% - 285px);
+  height: calc(100% - 285px);
+}
+
+/* line 19, src/scss/_components/common/_me.scss */
+.me__bg .c-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 23, src/scss/_components/common/_me.scss */
+.me__bg-media {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 60%;
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+/* line 30, src/scss/_components/common/_me.scss */
+.me__bg-media:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #c09d55;
+  -webkit-transform: translate(50px, 50px);
+      -ms-transform: translate(50px, 50px);
+          transform: translate(50px, 50px);
+}
+
+/* line 41, src/scss/_components/common/_me.scss */
+.me__bg-media img {
+  z-index: 2;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
+}
+
+/* line 52, src/scss/_components/common/_me.scss */
+.me__wrapper {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 180px;
+  padding-bottom: 220px;
+}
+
+/* line 60, src/scss/_components/common/_me.scss */
+.me__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 65, src/scss/_components/common/_me.scss */
+.me__wrapper-right {
+  width: 40%;
+}
+
+/* line 70, src/scss/_components/common/_me.scss */
+.me__title {
+  white-space: nowrap;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 120px;
+}
+
+/* line 76, src/scss/_components/common/_me.scss */
+.me__desc {
+  width: 100%;
+  max-width: 616px;
+  padding-bottom: 55px;
+}
+
+/* line 83, src/scss/_components/common/_me.scss */
+.me__btn .c-btn {
+  background-color: #ffffff;
+}
+
+/* line 3, src/scss/_components/common/_video.scss */
+.video {
+  padding-bottom: 190px;
+}
+
+/* line 6, src/scss/_components/common/_video.scss */
+.video__label.c-label {
+  color: #000000;
+}
+
+/* line 10, src/scss/_components/common/_video.scss */
+.video__title {
+  padding-bottom: 35px;
+}
+
+/* line 14, src/scss/_components/common/_video.scss */
+.video__box {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 350px;
+  background-color: #f7f7f7;
+}
+
+/* line 22, src/scss/_components/common/_video.scss */
+.video__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 27, src/scss/_components/common/_video.scss */
+.video__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc((100% - 32px) / 3);
+  max-width: calc((100% - 32px) / 3);
+  padding-bottom: 56px;
 }
 
 /* line 3, src/scss/_components/about/_about.scss */
