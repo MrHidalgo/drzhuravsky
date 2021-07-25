@@ -24,7 +24,7 @@
 
 		// lib
 		initHamburger();
-		// initHeaderFixed();
+		initHeaderFixed();
 		// ==========================================
 
 		// callback

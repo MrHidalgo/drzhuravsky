@@ -877,9 +877,9 @@ picture {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 /* line 12, src/scss/_components/common/_header.scss */
@@ -997,7 +997,35 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 66, src/scss/_components/common/_header.scss */
+/* line 67, src/scss/_components/common/_header.scss */
+.header__request:hover span {
+  color: #c69c47;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 71, src/scss/_components/common/_header.scss */
+.header__request:hover span:after, .header__request:hover span:before {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 78, src/scss/_components/common/_header.scss */
+.header__request:hover .icon-font {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 84, src/scss/_components/common/_header.scss */
 .is-hideScroll .header__request {
   opacity: 0;
   visibility: hidden;
@@ -1011,23 +1039,54 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 73, src/scss/_components/common/_header.scss */
+/* line 91, src/scss/_components/common/_header.scss */
 .header__request span {
+  position: relative;
   font-weight: 600;
   font-size: 18px;
-  line-height: 38px;
   color: #000;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-/* line 79, src/scss/_components/common/_header.scss */
+/* line 98, src/scss/_components/common/_header.scss */
+.header__request span:after, .header__request span:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: #c69c47;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 109, src/scss/_components/common/_header.scss */
+.header__request span:after {
+  left: 50%;
+}
+
+/* line 112, src/scss/_components/common/_header.scss */
+.header__request span:before {
+  right: 50%;
+}
+
+/* line 116, src/scss/_components/common/_header.scss */
 .header__request span + .icon-font {
   margin-left: 10px;
 }
 
-/* line 84, src/scss/_components/common/_header.scss */
+/* line 121, src/scss/_components/common/_header.scss */
 .header__request .icon-font {
   font-size: 12px;
   color: #c69c47;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/common/_footer.scss */
