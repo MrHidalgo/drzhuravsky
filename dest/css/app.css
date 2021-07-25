@@ -2713,6 +2713,156 @@ picture {
   padding-bottom: 56px;
 }
 
+/* line 3, src/scss/_components/meet/_meet.scss */
+.meet {
+  padding-top: 60px;
+  padding-bottom: 240px;
+}
+
+/* line 7, src/scss/_components/meet/_meet.scss */
+.meet__label {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 69px;
+  color: #000000;
+  text-align: center;
+}
+
+/* line 14, src/scss/_components/meet/_meet.scss */
+.meet__title {
+  width: 100%;
+  max-width: 1356px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 145px;
+  font-family: 'Didot', sans-serif;
+  font-size: 35px;
+  letter-spacing: 0.1em;
+  line-height: 55px;
+  text-align: center;
+  color: #98742b;
+}
+
+/* line 33, src/scss/_components/meet/_meet.scss */
+.meet__describe-1 .meet__describe-col-1, .meet__describe-3 .meet__describe-col-1 {
+  padding-left: 278px;
+}
+
+/* line 36, src/scss/_components/meet/_meet.scss */
+.meet__describe-1 .meet__describe-col-2, .meet__describe-3 .meet__describe-col-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 100px;
+}
+
+/* line 45, src/scss/_components/meet/_meet.scss */
+.meet__describe-2 {
+  padding-bottom: 200px;
+}
+
+/* line 49, src/scss/_components/meet/_meet.scss */
+.meet__describe-2 .meet__describe-row {
+  -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+/* line 54, src/scss/_components/meet/_meet.scss */
+.meet__describe-2 .meet__describe-col-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 58, src/scss/_components/meet/_meet.scss */
+.meet__describe-2 .meet__describe-col-1 .meet__describe-media:before {
+  -webkit-transform: translate(50px, 50px);
+      -ms-transform: translate(50px, 50px);
+          transform: translate(50px, 50px);
+}
+
+/* line 63, src/scss/_components/meet/_meet.scss */
+.meet__describe-2 .meet__describe-col-2 {
+  padding-top: 158px;
+  padding-right: 278px;
+}
+
+/* line 72, src/scss/_components/meet/_meet.scss */
+.meet__describe-3 img {
+  margin-left: auto;
+}
+
+/* line 77, src/scss/_components/meet/_meet.scss */
+.meet__describe-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 81, src/scss/_components/meet/_meet.scss */
+.meet__describe-wrapper img {
+  z-index: 2;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
+}
+
+/* line 91, src/scss/_components/meet/_meet.scss */
+.meet__describe-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 95, src/scss/_components/meet/_meet.scss */
+.meet__describe-col {
+  width: 50%;
+}
+
+/* line 100, src/scss/_components/meet/_meet.scss */
+.meet__describe-desc:not(:last-of-type) {
+  padding-bottom: 30px;
+}
+
+/* line 105, src/scss/_components/meet/_meet.scss */
+.meet__describe-media {
+  position: relative;
+}
+
+/* line 108, src/scss/_components/meet/_meet.scss */
+.meet__describe-media:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #c09d55;
+  -webkit-transform: translate(-50px, 50px);
+      -ms-transform: translate(-50px, 50px);
+          transform: translate(-50px, 50px);
+}
+
 /* line 3, src/scss/_components/about/_about.scss */
 .about {
   padding-top: 60px;
