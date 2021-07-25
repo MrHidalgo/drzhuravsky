@@ -2678,4 +2678,174 @@ picture {
   text-transform: uppercase;
 }
 
+/* line 3, src/scss/_components/contacts/_form.scss */
+.form {
+  padding-top: 60px;
+  padding-bottom: 105px;
+}
+
+/* line 7, src/scss/_components/contacts/_form.scss */
+.form__label {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+  color: #000000;
+  text-align: center;
+}
+
+/* line 14, src/scss/_components/contacts/_form.scss */
+.form__title {
+  padding-bottom: 52px;
+  text-align: center;
+}
+
+/* line 19, src/scss/_components/contacts/_form.scss */
+.form__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1365px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 27, src/scss/_components/contacts/_form.scss */
+.form__container-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 31, src/scss/_components/contacts/_form.scss */
+.form__container-group > div {
+  width: 100%;
+  max-width: -webkit-calc((100% - 16px) / 2);
+  max-width: calc((100% - 16px) / 2);
+}
+
+/* line 37, src/scss/_components/contacts/_form.scss */
+.form__container-field {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+/* line 41, src/scss/_components/contacts/_form.scss */
+.form__container-field label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+/* line 46, src/scss/_components/contacts/_form.scss */
+.form__container-field input,
+.form__container-field select,
+.form__container-field textarea {
+  outline: none;
+  position: relative;
+  width: 100%;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border: 2px solid #c09d55;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 21px;
+  text-align: left;
+  color: #000000;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.form__container-field input.placeholder,
+.form__container-field select.placeholder,
+.form__container-field textarea.placeholder {
+  font-weight: 600;
+  font-size: 21px;
+  text-align: left;
+  color: #adadad;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.form__container-field input:-moz-placeholder,
+.form__container-field select:-moz-placeholder,
+.form__container-field textarea:-moz-placeholder {
+  font-weight: 600;
+  font-size: 21px;
+  text-align: left;
+  color: #adadad;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.form__container-field input::-moz-placeholder,
+.form__container-field select::-moz-placeholder,
+.form__container-field textarea::-moz-placeholder {
+  font-weight: 600;
+  font-size: 21px;
+  text-align: left;
+  color: #adadad;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.form__container-field input:-ms-input-placeholder,
+.form__container-field select:-ms-input-placeholder,
+.form__container-field textarea:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 21px;
+  text-align: left;
+  color: #adadad;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.form__container-field input::-webkit-input-placeholder,
+.form__container-field select::-webkit-input-placeholder,
+.form__container-field textarea::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 21px;
+  text-align: left;
+  color: #adadad;
+}
+
+/* line 68, src/scss/_components/contacts/_form.scss */
+.form__container-field input,
+.form__container-field select {
+  height: 75px;
+  padding: 0 30px;
+}
+
+/* line 74, src/scss/_components/contacts/_form.scss */
+.form__container-field textarea {
+  height: 250px;
+  padding: 30px;
+}
+
+/* line 79, src/scss/_components/contacts/_form.scss */
+.form__container-field .c-btn {
+  width: 100%;
+}
+
+/* line 82, src/scss/_components/contacts/_form.scss */
+.form__container-field .c-btn__wrapper {
+  width: 100%;
+  max-width: 536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
