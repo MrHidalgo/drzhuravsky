@@ -3,7 +3,7 @@ ProjectTitle: DrZhuravsky
 PageList:
 - file: index.html
   titleName: Home
-  ready: 1
+  ready: 55
 - file: meet.html
   titleName: Meet The Doctor
   ready: 55
@@ -12,7 +12,7 @@ PageList:
   ready: 55
 - file: procedures.html
   titleName: Procedures
-  ready: 1
+  ready: 55
 - file: gallery.html
   titleName: Gallery
   ready: 55

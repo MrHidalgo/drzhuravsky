@@ -1,0 +1,33 @@
+// SECTION :: START
+
+.latest {
+	padding-top: 60px;
+	padding-bottom: 240px;
+
+	&__label {
+		justify-content: center;
+		padding-bottom: 81px;
+		color: #000000;
+		text-align: center;
+	}
+
+	&__title {
+		width: 100%;
+		max-width: 1258px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 41px;
+		text-align: center;
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 812px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 250px;
+		text-align: center;
+	}
+}
+
+// SECTION :: END
