@@ -1,0 +1,38 @@
+// SECTION :: START
+
+.more {
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 20px;
+	}
+
+	&__wrapper {
+		padding-bottom: 100px;
+	}
+
+	&__slider {}
+
+	.swiper {
+		&-container {
+			padding-top: 50px;
+			padding-bottom: 100px;
+			margin-right: 0;
+		}
+
+		&-slide {
+			width: auto !important;
+
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				border: 5px solid #fff;
+				filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
+			}
+		}
+	}
+}
+
+// SECTION :: END

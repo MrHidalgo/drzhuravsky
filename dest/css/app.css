@@ -2713,6 +2713,50 @@ picture {
   padding-bottom: 56px;
 }
 
+/* line 4, src/scss/_components/common/_more.scss */
+.more__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+/* line 11, src/scss/_components/common/_more.scss */
+.more__wrapper {
+  padding-bottom: 100px;
+}
+
+/* line 18, src/scss/_components/common/_more.scss */
+.more .swiper-container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-right: 0;
+}
+
+/* line 24, src/scss/_components/common/_more.scss */
+.more .swiper-slide {
+  width: auto !important;
+}
+
+/* line 27, src/scss/_components/common/_more.scss */
+.more .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+  -webkit-filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.16));
+}
+
 /* line 3, src/scss/_components/homepage/_procedures.scss */
 .procedures {
   padding-top: 100px;

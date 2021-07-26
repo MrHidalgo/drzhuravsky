@@ -25,6 +25,7 @@
 		// lib
 		initHamburger();
 		initHeaderFixed();
+		initSwiper();
 		// ==========================================
 
 		// callback
