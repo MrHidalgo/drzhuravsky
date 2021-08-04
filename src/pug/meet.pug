@@ -6,13 +6,16 @@ pageClassName: p-meet
 extends shared/_layout
 
 block content
-  div.body(class!= pageClassName)
 
-    +mainSection('meet', 'img-main-meet.png', 'MEET THE DOCTOR', 'DR. RUSLAN ZHURAVSKY')
+  main(data-scroll-container)
+    div(data-scroll-section)
 
-    include components/meet/_meet
+      +mainSection('meet', 'img-main-meet.png', 'MEET THE DOCTOR', 'DR. RUSLAN ZHURAVSKY')
 
-    include components/common/_video
-    include components/common/_gallery
-    include components/common/_stories
-    include components/common/_request
+      include components/meet/_meet
+
+      include components/common/_video
+      include components/common/_gallery
+      include components/common/_stories
+      include components/common/_request
+      include components/common/_footer

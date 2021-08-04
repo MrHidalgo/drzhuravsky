@@ -3,12 +3,22 @@
 .meet {
 	padding-top: 60px;
 	padding-bottom: 240px;
+	@include adaptive(1599) {
+		padding-top: 100px;
+	}
+	@include adaptive(767) {
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
 
 	&__label {
 		justify-content: center;
 		padding-bottom: 69px;
 		color: #000000;
 		text-align: center;
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__title {
@@ -23,6 +33,11 @@
 		line-height: 55px;
 		text-align: center;
 		color: #98742b;
+		@include fluid(font-size, 320px, 1920px, 25px, 35px);
+		@include fluid(line-height, 320px, 1920px, 45px, 55px);
+		@include adaptive(767) {
+			padding-bottom: 100px;
+		}
 	}
 
 	&__describe {
@@ -32,11 +47,31 @@
 				&-col {
 					&-1 {
 						padding-left: 278px;
+						@include adaptive(1799) {
+							padding-left: 200px;
+						}
+						@include adaptive(1365) {
+							padding-left: 100px;
+						}
+						@include adaptive(1279) {
+							padding-left: 30px;
+						}
+						@include adaptive(1023) {
+							padding-right: 30px;
+							padding-bottom: 30px;
+						}
+						@include adaptive(767) {
+							padding-left: 20px;
+							padding-right: 20px;
+						}
 					}
 					&-2 {
 						display: flex;
 						justify-content: flex-end;
 						padding-left: 100px;
+						@include adaptive(767) {
+							padding-left: 0;
+						}
 					}
 				}
 			}
@@ -44,10 +79,26 @@
 
 		&-2 {
 			padding-bottom: 200px;
+			@include adaptive(1799) {
+				padding-top: 100px;
+			}
+			@include adaptive(1535) {
+				padding-bottom: 100px;
+			}
+			@include adaptive(1023) {
+				padding-top: 50px;
+				padding-bottom: 100px;
+			}
+			@include adaptive(767) {
+				padding-bottom: 50px;
+			}
 
 			.meet__describe {
 				&-row {
 					transform: translateY(-30px);
+					@include adaptive(1023) {
+						flex-direction: column-reverse;
+					}
 				}
 
 				&-col {
@@ -57,12 +108,34 @@
 						.meet__describe-media {
 							&:before {
 								transform: translate(50px, 50px);
+								@include adaptive(767) {
+									transform: translate(25px, 25px);
+								}
 							}
 						}
 					}
 					&-2 {
+						padding-left: 100px;
 						padding-top: 158px;
 						padding-right: 278px;
+						@include adaptive(1799) {
+							padding-right: 200px;
+						}
+						@include adaptive(1365) {
+							padding-right: 100px;
+						}
+						@include adaptive(1279) {
+							padding-right: 30px;
+						}
+						@include adaptive(1023) {
+							padding-left: 30px;
+							padding-bottom: 30px;
+						}
+						@include adaptive(767) {
+							padding-top: 100px;
+							padding-left: 20px;
+							padding-right: 20px;
+						}
 					}
 				}
 			}
@@ -71,6 +144,9 @@
 		&-3 {
 			img {
 				margin-left: auto;
+				@include adaptive(767) {
+					margin-right: auto;
+				}
 			}
 		}
 
@@ -90,10 +166,18 @@
 
 		&-row {
 			display: flex;
+			@include adaptive(1023) {
+			  flex-wrap: wrap;
+			}
 		}
 
 		&-col {
+			display: flex;
+			flex-direction: column;
 			width: 50%;
+			@include adaptive(1023) {
+				width: 100%;
+			}
 		}
 
 		&-desc {
@@ -104,6 +188,12 @@
 
 		&-media {
 			position: relative;
+			@include adaptive(1023) {
+				width: 100%;
+				max-width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 			&:before {
 				content: '';
@@ -115,6 +205,10 @@
 				height: 100%;
 				border: 10px solid #c09d55;
 				transform: translate(-50px, 50px);
+				@include adaptive(767) {
+					border-width: 5px;
+					transform: translate(-25px, 25px);
+				}
 			}
 		}
 	}

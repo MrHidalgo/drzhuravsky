@@ -6,10 +6,10 @@ PageList:
   ready: 55
 - file: meet.html
   titleName: Meet The Doctor
-  ready: 55
+  ready: 95
 - file: about.html
   titleName: About
-  ready: 55
+  ready: 95
 - file: procedures.html
   titleName: Procedures
   ready: 95
