@@ -1,11 +1,12 @@
 html,
 body {
+  //overflow: hidden;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
 
   &.is-hideScroll {
-    width: 100%;
     overflow: hidden !important;
+    width: 100%;
   }
 }
 
@@ -17,7 +18,7 @@ html {
 
 
 body {
-  overflow-x: hidden;
+  //overflow: hidden;
   position: relative;
   margin: 0;
   padding: 0;
@@ -33,19 +34,19 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  padding-top: 164px;
+  //min-height: 100vh;
+  //padding-top: 164px;
 
-  > .body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1 0 auto;
-
-    &--start {
-      justify-content: flex-start;
-    }
-  }
+  //> .body {
+  //  display: flex;
+  //  flex-direction: column;
+  //  justify-content: center;
+  //  flex: 1 0 auto;
+  //
+  //  &--start {
+  //    justify-content: flex-start;
+  //  }
+  //}
 }
 
 

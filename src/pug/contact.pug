@@ -6,12 +6,15 @@ pageClassName: p-contact
 extends shared/_layout
 
 block content
-  div.body(class!= pageClassName)
 
-    +mainSection('contact', 'img-main-contact.png', 'QUESTIONS & INQUIRIES', 'CONTACT')
+  main(data-scroll-container)
+    div(data-scroll-section)
 
-    include components/contact/_form
-    include components/contact/_address
+      +mainSection('contact', 'img-main-contact.png', 'QUESTIONS & INQUIRIES', 'CONTACT')
 
-    include components/common/_stories
+      include components/contact/_form
+      include components/contact/_address
+
+      include components/common/_stories
+      include components/common/_footer
 

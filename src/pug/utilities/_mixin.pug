@@ -15,7 +15,7 @@ include ./_mixin/_form
 //- MIXIN :: END
 
 mixin mainSection(classMod, imgName, labelName, titleName)
-	main#main.main(class!= 'main--' + classMod)
+	div#main.main(data-scroll class!= 'main--' + classMod)
 
 		.main__bg
 			img.main__bg-img(src="img/" + imgName alt="")

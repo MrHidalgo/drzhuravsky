@@ -2,6 +2,16 @@
 
 .main {
 	position: relative;
+	margin-top: 164px;
+	@include adaptive(1535) {
+		margin-top: 134px;
+	}
+	@include adaptive(1365) {
+		margin-top: 114px;
+	}
+	@include adaptive(767) {
+		margin-top: 74px;
+	}
 
 	&.main--main {
 		.main {
@@ -28,6 +38,10 @@
 		left: 140px;
 		width: calc(100% - 140px);
 		height: 100%;
+		@include adaptive(767) {
+			left: 50px;
+			width: calc(100% - 50px);
+		}
 
 		&:after {
 			content: '';
@@ -41,6 +55,18 @@
 			border-left: 10px solid #c69c47;
 			border-bottom: 10px solid #c69c47;
 			transform: translate(0, 89px);
+			@include adaptive(1439) {
+				max-width: (474px - 89px);
+			}
+			@include adaptive(1023) {
+				max-width: (324px - 89px);
+			}
+			@include adaptive(767) {
+				max-width: 50%;
+				height: 50%;
+				border-width: 5px;
+				transform: translate(0, 40px);
+			}
 		}
 
 		&-img {
@@ -49,7 +75,7 @@
 		}
 
 		&-social {
-			z-index: 2;
+			z-index: 10;
 			position: absolute;
 			left: -140px;
 			bottom: 0;
@@ -58,11 +84,19 @@
 			width: 140px;
 			height: 100%;
 			padding-bottom: 205px;
+			@include adaptive(767) {
+				left: -50px;
+				width: 50px;
+				padding-bottom: 50px;
+			}
 
 			ul {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				@include adaptive(767) {
+					width: 50px;
+				}
 
 				li {
 					&:not(:last-of-type) {
@@ -74,18 +108,28 @@
 					white-space: nowrap;
 					transform: translateY(-50px) rotate(-90deg);
 					font-weight: 900;
-					font-size: 16px;
+					//font-size: 16px;
 					letter-spacing: 0.2em;
-					line-height: 38px;
+					//line-height: 38px;
 					color: #000;
+					@include fluid(font-size, 320px, 1920px, 14px, 16px);
 				}
 
 				a {
 					display: flex;
 
+					&:hover {
+						.icon-font {
+							color: #000000;
+							@include transition(color);
+						}
+					}
+
 					.icon-font {
-						font-size: 25px;
+						//font-size: 25px;
 						color: #c69c47;
+						@include fluid(font-size, 320px, 1920px, 18px, 25px);
+						@include transition(color);
 					}
 				}
 			}
@@ -95,9 +139,24 @@
 	&__wrapper {
 		z-index: 2;
 		position: relative;
-		width: 100%;
-		height: 1037px;
-		padding-left: 140px;
+		left: 140px;
+		width: calc(100% - 140px);
+		height: calc(100vh - 164px);
+		max-height: calc(100vh - 164px);
+		@include adaptive(1535) {
+			height: calc(100vh - 134px);
+			max-height: calc(100vh - 134px);
+		}
+		@include adaptive(1365) {
+			height: calc(100vh - 114px);
+			max-height: calc(100vh - 114px);
+		}
+		@include adaptive(767) {
+			left: 50px;
+			width: calc(100% - 50px);
+			height: calc(100vh - 74px);
+			max-height: calc(100vh - 74px);
+		}
 	}
 
 	&__block {
@@ -109,12 +168,15 @@
 		justify-content: center;
 		width: 100%;
 		max-width: 1502px;
-		min-height: 197px;
+		//min-height: 197px;
 		margin-left: auto;
 		margin-right: auto;
 		border: 5px solid #c09d55;
 		backdrop-filter: blur(30px);
 		background-color: rgba(255, 255, 255, 0.15);
+		@include adaptive(767) {
+		  flex-direction: column;
+		}
 
 		&-badge {
 			position: absolute;
@@ -125,21 +187,37 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 397px;
+			width: 100%;
+			max-width: 397px;
 			height: 39px;
 			margin-left: auto;
 			margin-right: auto;
 			background-color: #c69c47;
+			@include adaptive(767) {
+				left: 10px;
+				right: 10px;
+				width: auto;
+				max-width: unset;
+				height: auto;
+				padding: 7px 10px;
+			}
 
 			p {
 				text-align: center;
 				color: #fff;
+				@include adaptive(767) {
+					padding-bottom: 0;
+				}
 			}
 		}
 	}
 
 	&__title {
+		//padding-top: 55px;
+		//padding-bottom: 40px;
 		text-align: center;
+		@include fluid(padding-top, 320px, 1920px, 35px, 55px);
+		@include fluid(padding-bottom, 320px, 1920px, 20px, 40px);
 		@include fluid(font-size, 320px, 1920px, 40px, 100px);
 	}
 }

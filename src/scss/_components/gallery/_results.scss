@@ -3,12 +3,18 @@
 .results {
 	padding-top: 60px;
 	padding-bottom: 125px;
+	@include adaptive(767) {
+		padding-bottom: 30px;
+	}
 
 	&__label {
 		justify-content: center;
 		padding-bottom: 81px;
 		color: #000000;
 		text-align: center;
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__title {
@@ -23,11 +29,21 @@
 		margin-right: auto;
 		padding-bottom: 143px;
 		text-align: center;
+		@include adaptive(767) {
+			padding-bottom: 75px;
+		}
 	}
 
 	&__box {
 		position: relative;
 		display: flex;
+		flex-direction: column;
+		@include adaptive(1023) {
+			width: 100%;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
 		&-wrapper {
 			display: flex;
@@ -40,9 +56,34 @@
 			display: flex;
 			flex-wrap: wrap;
 			width: calc(100% + 155px);
+			padding-right: 140px;
+			@include adaptive(1536) {
+				left: -100px;
+				width: calc(100% + 100px);
+				padding-right: 100px;
+			}
+			@include adaptive(1439) {
+				left: -50px;
+				width: calc(100% + 50px);
+				padding-right: 50px;
+			}
+			@include adaptive(1023) {
+			  flex-wrap: wrap;
+				padding-right: 0;
+			}
 
 			&:nth-of-type(even) {
+				padding-right: 0;
 				padding-left: 140px;
+				@include adaptive(1535) {
+					padding-left: 100px;
+				}
+				@include adaptive(1439) {
+					padding-left: 50px;
+				}
+				@include adaptive(1023) {
+					padding-left: 0;
+				}
 			}
 
 			> div {
@@ -50,12 +91,22 @@
 				max-width: calc(100% / 3);
 				padding-left: 155px;
 				padding-bottom: 130px;
+				@include adaptive(1535) {
+					padding-left: 100px;
+				}
+				@include adaptive(1439) {
+					padding-left: 50px;
+					padding-bottom: 100px;
+				}
+				@include adaptive(1023) {
+					max-width: 100%;
+				}
 			}
 		}
 
 		&-img {
-			display: flex;
 			position: relative;
+			display: flex;
 
 			&:after {
 				content: '';
@@ -67,25 +118,34 @@
 				height: 100%;
 				border: 10px solid #c09d55;
 				transform: translate(-40px, 40px);
+				@include adaptive(1439) {
+					border-width: 5px;
+					transform: translate(-20px, 20px);
+				}
 			}
 
 			img {
+				z-index: 2;
+				position: relative;
 				display: block;
-				max-height: 100%;
+				max-width: 100%;
 				height: auto;
 			}
 		}
 
 		&-title {
+			z-index: 2;
 			position: absolute;
-			left: 47px;
+			//left: 47px;
 			bottom: 27px;
 			width: calc(100% - 94px);
 			font-family: 'Didot', sans-serif;
-			font-size: 30px;
+			//font-size: 30px;
 			text-align: left;
 			color: #000;
 			text-transform: uppercase;
+			@include fluid(left, 320px, 1920px, 20px, 47px);
+			@include fluid(font-size, 320px, 1920px, 20px, 30px);
 		}
 	}
 }

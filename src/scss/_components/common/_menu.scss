@@ -196,6 +196,13 @@
 			height: 100%;
 		}
 	}
+
+	.header__contact,
+	.header__request {
+		@include adaptive(1023) {
+			display: flex;
+		}
+	}
 }
 
 // SECTION :: END

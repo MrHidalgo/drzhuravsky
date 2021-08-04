@@ -109,6 +109,9 @@
 				font-size: 16px;
 				color: #000;
 				@include transition(color);
+				@include adaptive(767) {
+					min-height: 40px;
+				}
 
 				&:before,
 				&:after {

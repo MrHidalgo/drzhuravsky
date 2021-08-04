@@ -6,8 +6,28 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	border-bottom: 1px solid transparent;
+	box-shadow: 0 2px 10px 0 rgba(#000, 0);
 	background-color: #ffffff;
-	@include transition(top, background-color);
+	@include transition(border-color, box-shadow);
+
+	&.unpinned,
+	&.pinned {
+		border-color: rgba(#000, 0.05);
+		box-shadow: 0 2px 12px 0 rgba(#000, 0.05);
+		@include transition(border-color, box-shadow);
+
+		.header {
+			&__wrapper {
+				height: 114px;
+				@include transition(height);
+			}
+		}
+	}
+
+	&.unpinned {
+		//transform: translate3d(0, -100%, 0);
+	}
 
 	.is-hideScroll & {
 		background-color: transparent;
@@ -19,6 +39,16 @@
 		align-items: center;
 		justify-content: space-between;
 		height: 164px;
+		@include transition(height);
+		@include adaptive(1535) {
+			height: 134px;
+		}
+		@include adaptive(1365) {
+			height: 114px;
+		}
+		@include adaptive(767) {
+			height: 74px;
+		}
 
 		&-left,
 		&-right {
@@ -42,11 +72,15 @@
 	&__contact {
 		text-align: center;
 		font-weight: 800;
-		font-size: 18px;
-		line-height: 38px;
+		//font-size: 18px;
+		//line-height: 38px;
 		color: #000;
 		transform: translateX(0);
 		@include transition(opacity, visibility, transform);
+		@include fluid(font-size, 320px, 1920px, 14px, 18px);
+		@include adaptive(1023) {
+			display: none;
+		}
 
 		.is-hideScroll & {
 			opacity: 0;
@@ -62,6 +96,9 @@
 		margin-right: 45px;
 		transform: translateX(0);
 		@include transition(opacity, visibility, transform);
+		@include adaptive(1023) {
+			display: none;
+		}
 
 		&:hover {
 			span {
@@ -91,9 +128,10 @@
 		span {
 			position: relative;
 			font-weight: 600;
-			font-size: 18px;
+			//font-size: 18px;
 			color: #000;
 			@include transition(color);
+			@include fluid(font-size, 320px, 1920px, 14px, 18px);
 
 			&:after,
 			&:before {
@@ -119,9 +157,10 @@
 		}
 
 		.icon-font {
-			font-size: 12px;
+			//font-size: 12px;
 			color: #c69c47;
 			@include transition(transform);
+			@include fluid(font-size, 320px, 1920px, 10px, 12px);
 		}
 	}
 }

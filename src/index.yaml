@@ -15,7 +15,7 @@ PageList:
   ready: 55
 - file: gallery.html
   titleName: Gallery
-  ready: 55
+  ready: 95
 - file: contact.html
   titleName: Contact
-  ready: 55
+  ready: 95
