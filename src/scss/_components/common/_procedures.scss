@@ -11,6 +11,9 @@
 		left: 0;
 		width: 100%;
 		height: calc(100% - 125px);
+		@include adaptive(1279) {
+			height: 100%;
+		}
 
 		> img {
 			@extend %imageResCoverAbs;
@@ -37,10 +40,26 @@
 			position: relative;
 			display: flex;
 			flex-direction: column;
+			@include adaptive(1023) {
+			  flex-wrap: wrap;
+				padding-bottom: 50px;
+			}
 		}
 
 		&-row {
 			display: flex;
+			@include adaptive(1279) {
+			  &-1 {
+					padding-bottom: 100px;
+				}
+
+				&-2 {
+					padding-bottom: 30px;
+				}
+			}
+			@include adaptive(1023) {
+				flex-wrap: wrap;
+			}
 
 			&-1 {
 				.procedures__box-col {
@@ -49,27 +68,56 @@
 
 						.procedures__box-media {
 							transform: translateY(-120px);
+							@include adaptive(767) {
+								transform: translateY(-20px);
+								margin-bottom: 80px;
+							}
 
 							&:after {
 								transform: translate(50px, 50px);
+								@include adaptive(1023) {
+									transform: translate(30px, 30px);
+								}
+								@include adaptive(767) {
+									transform: translate(15px, 15px);
+								}
 							}
 						}
 					}
 					&-2 {
 						padding-top: 158px;
 						padding-left: 158px;
+						@include adaptive(1023) {
+							padding-top: 0;
+							padding-left: 0;
+						}
 
 						.procedures__box-title {
 							transform: translateX(-50%);
+							@include adaptive(1279) {
+								transform: translateX(-80%);
+							}
+							@include adaptive(1023) {
+							  transform: none;
+							}
 						}
 					}
 				}
 			}
 			&-2 {
+				@include adaptive(1023) {
+					padding-top: 100px;
+				  flex-direction: column-reverse;
+				}
+
 				.procedures__box-col {
 					&-1 {
 						padding-top: 158px;
 						padding-right: 158px;
+						@include adaptive(1023) {
+							padding-top: 100px;
+							padding-right: 0;
+						}
 					}
 					&-2 {
 						display: flex;
@@ -77,6 +125,12 @@
 						.procedures__box-media {
 							&:after {
 								transform: translate(-50px, 50px);
+								@include adaptive(1023) {
+									transform: translate(-30px, 30px);
+								}
+								@include adaptive(767) {
+									transform: translate(-15px, 15px);
+								}
 							}
 						}
 					}
@@ -86,6 +140,9 @@
 
 		&-col {
 			width: 50%;
+			@include adaptive(1023) {
+				width: 100%;
+			}
 		}
 
 		&-media {
@@ -99,6 +156,9 @@
 				width: 100%;
 				height: 100%;
 				border: 10px solid #c09d55;
+				@include adaptive(767) {
+				  border-width: 5px;
+				}
 			}
 
 			img {
@@ -113,7 +173,8 @@
 		}
 
 		&-title {
-			font-size: 130px;
+			//font-size: 130px;
+			@include fluid(font-size, 320px, 1920px, 37px, 130px);
 		}
 
 		&-desc {

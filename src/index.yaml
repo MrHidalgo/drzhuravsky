@@ -12,7 +12,7 @@ PageList:
   ready: 55
 - file: procedures.html
   titleName: Procedures
-  ready: 55
+  ready: 95
 - file: gallery.html
   titleName: Gallery
   ready: 95

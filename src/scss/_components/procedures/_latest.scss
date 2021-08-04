@@ -3,12 +3,18 @@
 .latest {
 	padding-top: 60px;
 	padding-bottom: 240px;
+	@include adaptive(1023) {
+		padding-bottom: 100px;
+	}
 
 	&__label {
 		justify-content: center;
 		padding-bottom: 81px;
 		color: #000000;
 		text-align: center;
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__title {
@@ -27,6 +33,9 @@
 		margin-right: auto;
 		padding-bottom: 250px;
 		text-align: center;
+		@include adaptive(767) {
+			padding-bottom: 100px;
+		}
 	}
 }
 
