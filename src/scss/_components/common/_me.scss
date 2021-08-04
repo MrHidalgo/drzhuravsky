@@ -3,6 +3,9 @@
 .me {
 	position: relative;
 	padding-bottom: 125px;
+	@include adaptive(767) {
+		padding-bottom: 50px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -11,6 +14,9 @@
 		left: 0;
 		width: 100%;
 		height: calc(100% - 120px);
+		@include adaptive(767) {
+			height: 100%;
+		}
 
 		> img {
 			@extend %imageResCoverAbs;
@@ -26,6 +32,12 @@
 			align-items: flex-start;
 			max-width: 60%;
 			transform: translateY(30px);
+			@include adaptive(1535) {
+				max-width: 50%;
+			}
+			@include adaptive(1023) {
+				display: none;
+			}
 
 			&:after {
 				content: '';
@@ -36,6 +48,10 @@
 				height: 100%;
 				border: 10px solid #c09d55;
 				transform: translate(50px, 50px);
+				@include adaptive(767) {
+					border-width: 5px;
+					transform: translate(20px, 20px);
+				}
 			}
 
 			img {
@@ -56,21 +72,48 @@
 		align-items: center;
 		padding-top: 180px;
 		padding-bottom: 220px;
+		@include adaptive(1023) {
+		  flex-wrap: wrap;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
 
 		&-left {
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
+
+			.me__bg-media {
+				display: none;
+				max-width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				@include adaptive(1023) {
+					display: block;
+				}
+			}
 		}
+
 		&-right {
 			width: 40%;
+			@include adaptive(1023) {
+				width: 100%;
+				padding-top: 100px;
+			}
 		}
 	}
 
 	&__title {
 		white-space: nowrap;
 		transform: translateX(-50%);
-		font-size: 120px;
+		//font-size: 120px;
+		@include fluid(font-size, 320px, 1920px, 37px, 120px);
+		@include adaptive(1279) {
+			transform: translateX(-70%);
+		}
+		@include adaptive(1023) {
+		  transform: none;
+		}
 	}
 
 	&__desc {

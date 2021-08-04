@@ -3,12 +3,18 @@
 .about {
 	padding-top: 60px;
 	padding-bottom: 171px;
+	@include adaptive(1279) {
+		padding-bottom: 125px;
+	}
 
 	&__label {
 		justify-content: center;
 		padding-bottom: 80px;
 		color: #000000;
 		text-align: center;
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__title {
@@ -32,6 +38,11 @@
 	&__box {
 		position: relative;
 		display: flex;
+		@include adaptive(767) {
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
 		&-wrapper {
 			display: flex;
@@ -43,9 +54,25 @@
 				align-items: flex-start;
 				width: 100%;
 				max-width: calc((100% - (154px * 2)) / 3);
+				@include adaptive(1535) {
+					max-width: calc((100% - (100px * 2)) / 3);
+				}
+				@include adaptive(1279) {
+					max-width: calc((100% - (50px * 2)) / 3);
+				}
+				@include adaptive(767) {
+					max-width: 100%;
+
+					&:not(:last-of-type) {
+						padding-bottom: 50px;
+					}
+				}
 
 				&:nth-of-type(2) {
 					padding-top: 130px;
+					@include adaptive(767) {
+						padding-top: 0;
+					}
 				}
 			}
 		}
@@ -60,6 +87,10 @@
 			background-color: transparent;
 			border: 10px solid #c09d55;
 			transform: translate(-40px, 40px);
+			@include adaptive(1279) {
+				border-width: 5px;
+				transform: translate(-20px, 20px);
+			}
 		}
 
 		img {

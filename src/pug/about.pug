@@ -6,14 +6,17 @@ pageClassName: p-about
 extends shared/_layout
 
 block content
-  div.body(class!= pageClassName)
 
-    +mainSection('about', 'img-main-about.png', 'ABOUT', 'OUR PRACTICE')
+  main(data-scroll-container)
+    div(data-scroll-section)
 
-    include components/about/_about
+      +mainSection('about', 'img-main-about.png', 'ABOUT', 'OUR PRACTICE')
 
-    include components/common/_me
-    include components/common/_stories
-    include components/common/_video
-    include components/common/_gallery
-    include components/common/_request
+      include components/about/_about
+
+      include components/common/_me
+      include components/common/_stories
+      include components/common/_video
+      include components/common/_gallery
+      include components/common/_request
+      include components/common/_footer

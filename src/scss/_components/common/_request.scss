@@ -6,6 +6,9 @@
 	//padding-bottom: 57px;
 	@include fluid(padding-top, 320px, 1920px, 25px, 57px);
 	@include fluid(padding-bottom, 320px, 1920px, 25px, 57px);
+	@include adaptive(767) {
+		margin-top: 30px;
+	}
 
 	&__bg {
 		z-index: 0;
