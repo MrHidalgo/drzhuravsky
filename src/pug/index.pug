@@ -6,17 +6,20 @@ pageClassName: p-home
 extends shared/_layout
 
 block content
-  div.body(class!= pageClassName)
 
-    +mainSection('main', 'img-main-main.png', '', '')
+  main(data-scroll-container)
+    div(data-scroll-section)
 
-    include components/homepage/_practice
+      +mainSection('main', 'img-main-main.png', '', '')
 
-    include components/common/_me
+      include components/homepage/_practice
 
-    include components/homepage/_procedures
+      include components/common/_me
 
-    include components/common/_more
-    include components/common/_gallery
-    include components/common/_stories
-    include components/common/_request
+      include components/homepage/_procedures
+
+      include components/common/_more
+      include components/common/_gallery
+      include components/common/_stories
+      include components/common/_request
+      include components/common/_footer

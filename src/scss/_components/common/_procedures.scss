@@ -3,6 +3,9 @@
 .procedures {
 	padding-top: 100px;
 	padding-bottom: 300px;
+	@include adaptive(767) {
+		padding-bottom: 100px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -28,6 +31,9 @@
 
 	&__title {
 		padding-bottom: 230px;
+		@include adaptive(767) {
+			padding-bottom: 100px;
+		}
 	}
 
 	&__wrapper {
@@ -106,7 +112,7 @@
 			}
 			&-2 {
 				@include adaptive(1023) {
-					padding-top: 100px;
+					padding-top: 50px;
 				  flex-direction: column-reverse;
 				}
 

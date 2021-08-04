@@ -22,6 +22,13 @@
 					max-width: (674px + 89px);
 					border-right: 10px solid #c69c47;
 					transform: translate(47px, 89px);
+					@include adaptive(767) {
+						left: 0;
+						max-width: 50%;
+						height: 50%;
+						border-width: 5px;
+						transform: translate(0, 40px);
+					}
 				}
 			}
 
