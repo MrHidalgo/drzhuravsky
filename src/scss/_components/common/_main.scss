@@ -2,16 +2,6 @@
 
 .main {
 	position: relative;
-	margin-top: 164px;
-	@include adaptive(1535) {
-		margin-top: 134px;
-	}
-	@include adaptive(1365) {
-		margin-top: 114px;
-	}
-	@include adaptive(767) {
-		margin-top: 74px;
-	}
 
 	&.main--main {
 		.main {
@@ -41,13 +31,23 @@
 	&__bg {
 		z-index: 0;
 		position: absolute;
-		top: 0;
+		top: 164px;
 		left: 140px;
 		width: calc(100% - 140px);
-		height: 100%;
+		height: calc(100% - 164px);
+		@include adaptive(1535) {
+			top: 134px;
+			height: calc(100% - 134px);
+		}
+		@include adaptive(1365) {
+			top: 114px;
+			height: calc(100% - 114px);
+		}
 		@include adaptive(767) {
+			top: 74px;
 			left: 50px;
 			width: calc(100% - 50px);
+			height: calc(100% - 74px);
 		}
 
 		&:after {
@@ -148,20 +148,20 @@
 		position: relative;
 		left: 140px;
 		width: calc(100% - 140px);
-		height: calc(100vh - 164px);
-		max-height: calc(100vh - 164px);
+		height: 100vh;
+		max-height: 100vh;
 		@include adaptive(1535) {
-			height: calc(100vh - 134px);
-			max-height: calc(100vh - 134px);
+			height: 100vh;
+			max-height: 100vh;
 		}
 		@include adaptive(1365) {
-			height: calc(100vh - 114px);
-			max-height: calc(100vh - 114px);
+			height: 100vh;
+			max-height: 100vh;
 		}
 		@include adaptive(767) {
 			left: 50px;
 			width: calc(100% - 50px);
-			height: calc(100vh - 74px);
+			height: 100vh;
 			max-height: calc(100vh - 74px);
 		}
 	}

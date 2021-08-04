@@ -98,6 +98,15 @@
 		&-top {
 			width: 100%;
 			height: 164px;
+			@include adaptive(1535) {
+				height: 134px;
+			}
+			@include adaptive(1365) {
+				height: 114px;
+			}
+			@include adaptive(767) {
+				height: 74px;
+			}
 		}
 
 		&-middle {
@@ -113,13 +122,21 @@
 			> div {
 				&:nth-of-type(1) {
 					width: 100%;
-					max-width: 415px;
+					//max-width: 415px;
 					border-right: 2px solid #C09D55;
+					@include fluid(max-width, 320px, 1920px, 300px, 415px);
+					@include adaptive(767) {
+						max-width: 100% !important;
+						border-right: none;
+					}
 				}
 				&:nth-of-type(2) {
 					flex: 1;
 					min-width: 1px;
 					max-width: 100%;
+					@include adaptive(767) {
+						display: none;
+					}
 				}
 			}
 		}
@@ -131,12 +148,28 @@
 			width: 100%;
 			height: 210px;
 			border-top: 2px solid #C09D55;
+			@include adaptive(767) {
+			  flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 125px;
+
+				> div {
+					&:nth-of-type(1) {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						padding-bottom: 25px;
+					}
+				}
+			}
 
 			.header__contact,
 			.header__request {
 				opacity: 1;
 				visibility: visible;
 				transform: translateX(0);
+				margin: 0;
 			}
 
 			.footer__social {
@@ -162,12 +195,14 @@
 		width: 100%;
 		text-transform: uppercase;
 		font-family: 'Didot', sans-serif;
-		font-size: 50px;
+		//font-size: 50px;
 		text-align: left;
 		color: #000;
 		@include transition(color);
+		@include fluid(font-size, 320px, 1920px, 25px, 50px);
 
-		&:hover {
+		&:hover,
+		&.is-hover {
 			color: #c69c47;
 			@include transition(color);
 
@@ -194,6 +229,70 @@
 			flex-direction: column;
 			justify-content: space-between;
 			height: 100%;
+		}
+	}
+
+	&__content {
+		display: none;
+
+		&-wrapper {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			padding-left: 75px;
+			@include adaptive(1023) {
+				padding-left: 50px;
+			}
+		}
+	}
+
+	&__link {
+		position: relative;
+		display: flex;
+		font-weight: 300;
+		//font-size: 25px;
+		//line-height: 55px;
+		text-align: left;
+		color: #000;
+		@include fluid(font-size, 320px, 1920px, 18px, 25px);
+		@include fluid(line-height, 320px, 1920px, 40px, 55px);
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			width: 0;
+			height: 1px;
+			background-color: #000000;
+			@include transition(width);
+		}
+
+		&:before {
+			left: 50%;
+		}
+		&:after {
+			right: 50%;
+		}
+
+		&:hover {
+			&:before,
+			&:after {
+				width: 50%;
+				@include transition(width);
+			}
+		}
+
+		&-wrapper {
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+
+			li {
+				display: flex;
+				justify-content: flex-start;
+				width: auto;
+			}
 		}
 	}
 
