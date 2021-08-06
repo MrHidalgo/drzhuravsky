@@ -18,7 +18,8 @@ mixin mainSection(classMod, imgName, labelName, titleName)
 	div#main.main(data-scroll class!= 'main--' + classMod)
 
 		.main__bg
-			img.main__bg-img(src="img/" + imgName alt="")
+			.main__bg-img
+				img(src="img/" + imgName alt="")
 
 			.main__bg-social
 				ul
@@ -38,6 +39,8 @@ mixin mainSection(classMod, imgName, labelName, titleName)
 			.main__wrapper
 
 				.main__block
+					.main__block-bg
 					.main__block-badge
-						p.c-label!= labelName
-					h1.main__title.c-title!= titleName
+						h2.c-label!= labelName
+					.main__title
+						h1.c-title!= titleName

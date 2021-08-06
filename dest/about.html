@@ -15,29 +15,11 @@
     <!-- STYLE :: END-->
   </head>
   <body>
-    <!-- HEADER :: START-->
-    <header class="header" id="header">
-      <div class="c-grid">
-        <div class="header__wrapper">
-          <div class="header__wrapper-left">
-            <div class="logo logo--header"><a class="logo__btn" href="#"><img class="logo__img" src="img/logo.svg" alt=""></a></div>
-          </div>
-          <div class="header__wrapper-middle"><a class="header__contact" href="#">MIAMI, FL | 732.851.1231</a></div>
-          <div class="header__wrapper-right"><a class="header__request" href="#"><span>REQUEST CONSULTATION</span><i class="icon-font icon-arrow"></i></a>
-            <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- HEADER :: END-->
     <main data-scroll-container>
       <div data-scroll-section>
         <div class="main main--about" id="main" data-scroll="data-scroll">
-          <div class="main__bg"><img class="main__bg-img" src="img/img-main-about.png" alt=""/>
+          <div class="main__bg">
+            <div class="main__bg-img"><img src="img/img-main-about.png" alt=""/></div>
             <div class="main__bg-social">
               <ul>
                 <li>
@@ -52,10 +34,13 @@
           <div class="c-grid">
             <div class="main__wrapper">
               <div class="main__block">
+                <div class="main__block-bg"></div>
                 <div class="main__block-badge">
-                  <p class="c-label">ABOUT</p>
+                  <h2 class="c-label">ABOUT</h2>
                 </div>
-                <h1 class="main__title c-title">OUR PRACTICE</h1>
+                <div class="main__title">
+                  <h1 class="c-title">OUR PRACTICE</h1>
+                </div>
               </div>
             </div>
           </div>
@@ -105,7 +90,7 @@
         </section>
         <!-- SECTION :: END-->
         <!-- SECTION :: START-->
-        <section class="stories" id="stories" data-scroll>
+        <section class="stories" id="stories" data-scroll data-scroll-offset="20%">
           <div class="stories__bg">
             <div class="stories__bg-pattern"></div>
           </div>
@@ -114,7 +99,9 @@
               <div class="stories__wrapper-left">
                 <div class="stories__content">
                   <p class="stories__label c-label">Real Patients. Real Results.</p>
-                  <h2 class="stories__title c-title">PATIENT STORIES</h2>
+                  <div class="stories__title">
+                    <h2 class="c-title">PATIENT STORIES</h2>
+                  </div>
                   <p class="stories__desc c-desc">Dr. Z highlights one of his patient’s each month. These patients receive a professional photoshoot to showcase their incredible results. Take a look to see the aesthetic transformation possible at Z Facial Plastics.</p>
                   <div class="gallery__btn c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>READ MORE</span></a></div>
                 </div>
@@ -169,7 +156,7 @@
         </section>
         <!-- SECTION :: END-->
         <!-- FOOTER :: START-->
-        <footer class="footer" id="footer" data-scroll>
+        <footer class="footer" id="footer" data-scroll data-scroll-offset="10%">
           <div class="c-grid">
             <div class="footer__wrapper">
               <div class="footer__wrapper-left">

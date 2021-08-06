@@ -188,12 +188,14 @@ window.addEventListener('scroll', function (ev) {});
 			if (instance.direction === "down") {
 				if (instance.scroll.y > headerHeight) {
 					headerNode.classList.add("pinned");
+					headerNode.classList.remove("unpinned");
 				}
 			}
 
 			if (instance.direction === "up") {
 				if (instance.scroll.y <= headerHeight) {
 					headerNode.classList.remove("pinned");
+					headerNode.classList.add("unpinned");
 				}
 			}
 		}
@@ -245,7 +247,13 @@ window.addEventListener('scroll', function (ev) {});
 		// ==========================================
 
 		setTimeout(function () {
-			$('body').animate({ opacity: 1 }, 1000);
+			$('body').animate({ opacity: 1 }, 750);
+			$('header').addClass('is-animate');
+
+			setTimeout(function () {
+				$('header').removeClass('is-animate').addClass('is-show');
+			}, 1000);
+
 			locoScrollCB();
 		}, 500);
 	};

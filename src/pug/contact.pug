@@ -8,7 +8,9 @@ extends shared/_layout
 block content
 
   main(data-scroll-container)
-    div(data-scroll-section)
+    div#main(data-scroll-section)
+
+      include components/common/_header
 
       +mainSection('contact', 'img-main-contact.png', 'QUESTIONS & INQUIRIES', 'CONTACT')
 

@@ -1,22 +1,23 @@
 // SECTION :: START
 
-section#address.address(data-scroll)
+section#address.address(data-scroll data-scroll-offset='20%')
 
   .address__bg
     img(src="img/img-contact-address.png" alt="")
 
   .c-grid-fluid
-    .address__box
-      div
+    .address__box-wrapper
+      .address__box
+        div
 
-        h2.address__box-title Miami Office
-        p.address__box-desc 788 Brickell Plaza
-        p.address__box-desc Miami, FL 33131
+          h2.address__box-title Miami Office
+          p.address__box-desc 788 Brickell Plaza
+          p.address__box-desc Miami, FL 33131
 
-      div
+        div
 
-        .address__btn.c-btn__wrapper
-          a.c-btn.c-btn--textDark(href="#")
-            span GET DIRECTIONS
+          .address__btn.c-btn__wrapper
+            a.c-btn.c-btn--textDark(href="#")
+              span GET DIRECTIONS
 
 // SECTION :: END

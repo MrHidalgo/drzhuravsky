@@ -8,6 +8,20 @@
 		padding-bottom: 75px;
 	}
 
+	&.is-inview {
+		.c-grid {
+			opacity: 1;
+			transform: none;
+			transition-duration: 1s;
+		}
+	}
+
+	.c-grid {
+		opacity: 0;
+		transform: translateY(50%);
+		transition: opacity 0s cubic-bezier(.215,.61,.355,1), transform 0s cubic-bezier(.215,.61,.355,1);
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: center;

@@ -15,29 +15,11 @@
     <!-- STYLE :: END-->
   </head>
   <body>
-    <!-- HEADER :: START-->
-    <header class="header" id="header">
-      <div class="c-grid">
-        <div class="header__wrapper">
-          <div class="header__wrapper-left">
-            <div class="logo logo--header"><a class="logo__btn" href="#"><img class="logo__img" src="img/logo.svg" alt=""></a></div>
-          </div>
-          <div class="header__wrapper-middle"><a class="header__contact" href="#">MIAMI, FL | 732.851.1231</a></div>
-          <div class="header__wrapper-right"><a class="header__request" href="#"><span>REQUEST CONSULTATION</span><i class="icon-font icon-arrow"></i></a>
-            <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- HEADER :: END-->
     <main data-scroll-container>
       <div data-scroll-section>
         <div class="main main--gallery" id="main" data-scroll="data-scroll">
-          <div class="main__bg"><img class="main__bg-img" src="img/img-main-gallery.png" alt=""/>
+          <div class="main__bg">
+            <div class="main__bg-img"><img src="img/img-main-gallery.png" alt=""/></div>
             <div class="main__bg-social">
               <ul>
                 <li>
@@ -52,10 +34,13 @@
           <div class="c-grid">
             <div class="main__wrapper">
               <div class="main__block">
+                <div class="main__block-bg"></div>
                 <div class="main__block-badge">
-                  <p class="c-label">BEFORE & AFTERS</p>
+                  <h2 class="c-label">BEFORE & AFTERS</h2>
                 </div>
-                <h1 class="main__title c-title">Gallery</h1>
+                <div class="main__title">
+                  <h1 class="c-title">Gallery</h1>
+                </div>
               </div>
             </div>
           </div>
@@ -112,7 +97,7 @@
         </section>
         <!-- SECTION :: END-->
         <!-- FOOTER :: START-->
-        <footer class="footer" id="footer" data-scroll>
+        <footer class="footer" id="footer" data-scroll data-scroll-offset="10%">
           <div class="c-grid">
             <div class="footer__wrapper">
               <div class="footer__wrapper-left">

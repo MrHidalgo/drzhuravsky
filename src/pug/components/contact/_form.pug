@@ -1,11 +1,12 @@
 // SECTION :: START
 
-section#form.form(data-scroll)
+section#form.form(data-scroll data-scroll-offset='20%')
   .c-grid
     .form__wrapper
 
       p.form__label.c-label!= "<span>HOME /</span> CONTACT"
-      h2.form__title.c-title GREAT RESULTS
+      .form__title
+        h2.c-title GREAT RESULTS
 
       form.form__container(action='' method='' autocomplete='off')
         .form__container-group
@@ -50,13 +51,15 @@ section#form.form(data-scroll)
                   option(value='1') Value 2
                   option(value='1') Value 3
 
-        .form__container-field
-          label
-            textarea(placeholder='How can we help you?')
+        .form__container-row.form__container-row-1
+          .form__container-field
+            label
+              textarea(placeholder='How can we help you?')
 
-        .form__container-field
-          .c-btn__wrapper.c-btn__wrapper--center
-            button.c-btn.c-btn--textDark(type='submit')
-              span SUBMIT FORM
+        .form__container-row.form__container-row-2
+          .form__container-field
+            .c-btn__wrapper.c-btn__wrapper--center
+              button.c-btn.c-btn--textDark(type='submit')
+                span SUBMIT FORM
 
 // SECTION :: END
