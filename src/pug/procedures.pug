@@ -6,15 +6,14 @@ pageClassName: p-procedures
 extends shared/_layout
 
 block content
-  main(data-scroll-container)
-    div(data-scroll-section)
 
-      +mainSection('procedures', 'img-main-procedures.png', 'FACIAL PLASTICS', 'Procedures')
+  main
 
-      include components/procedures/_latest
+    +mainSection('procedures', 'img-main-procedures.png', 'FACIAL PLASTICS', 'Procedures')
 
-      include components/common/_more
-      include components/common/_gallery
-      include components/common/_stories
-      include components/common/_request
-      include components/common/_footer
+    include components/procedures/_latest
+
+    include components/common/_more
+    include components/common/_gallery
+    include components/common/_stories
+    include components/common/_request

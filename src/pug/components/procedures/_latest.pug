@@ -1,12 +1,15 @@
 // SECTION :: START
 
-section#latest.latest(data-scroll)
+section#latest.latest
   .c-grid
     .latest__wrapper
 
-      p.latest__label.c-label!= "<span>HOME /</span> PROCEDURES"
-      h2.latest__title.c-title The Latest Advancements in FACIAL PLASTICS
-      p.latest__desc.c-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum sed nunc a ultrices. Mauris porttitor diam quis risus porta, vel viverra enim accumsan. Maecenas dignissim enim eget ante lobortis ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In fermentum tempor mauris ut elementum. Sed at arcu in libero ullamcorper malesuada nec vel augue. Cras dapibus urna suscipit elit facilisis lacinia. Integer at ipsum varius, dictum sem nec, tempor arcu.
+      p.latest__label.c-label.wow.animate__animated.animate__fadeInUp!= "<span>HOME /</span> PROCEDURES"
+      .latest__title
+        h2.c-title
+          span.wow.animate__animated.animate__fadeInUp The Latest Advancements
+          span.wow.animate__animated.animate__fadeInUp(data-wow-delay='0.25s') in FACIAL PLASTICS
+      p.latest__desc.c-desc.wow.animate__animated.animate__fadeInUp Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum sed nunc a ultrices. Mauris porttitor diam quis risus porta, vel viverra enim accumsan. Maecenas dignissim enim eget ante lobortis ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In fermentum tempor mauris ut elementum. Sed at arcu in libero ullamcorper malesuada nec vel augue. Cras dapibus urna suscipit elit facilisis lacinia. Integer at ipsum varius, dictum sem nec, tempor arcu.
 
   include ../common/_procedures
 

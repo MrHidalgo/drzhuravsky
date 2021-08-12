@@ -7,15 +7,13 @@ extends shared/_layout
 
 block content
 
-  main(data-scroll-container)
-    div(data-scroll-section)
+  main
 
-      +mainSection('meet', 'img-main-meet.png', 'MEET THE DOCTOR', 'DR. RUSLAN ZHURAVSKY')
+    +mainSection('meet', 'img-main-meet.png', 'MEET THE DOCTOR', 'DR. RUSLAN ZHURAVSKY')
 
-      include components/meet/_meet
+    include components/meet/_meet
 
-      include components/common/_video
-      include components/common/_gallery
-      include components/common/_stories
-      include components/common/_request
-      include components/common/_footer
+    include components/common/_video
+    include components/common/_gallery
+    include components/common/_stories
+    include components/common/_request

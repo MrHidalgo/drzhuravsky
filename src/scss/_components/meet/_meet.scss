@@ -67,7 +67,7 @@
 					}
 					&-2 {
 						display: flex;
-						justify-content: flex-end;
+						align-items: flex-end;
 						padding-left: 100px;
 						@include adaptive(767) {
 							padding-left: 0;
@@ -104,8 +104,11 @@
 				&-col {
 					&-1 {
 						display: flex;
+						align-items: flex-start;
 
 						.meet__describe-media {
+							width: auto;
+
 							&:before {
 								transform: translate(50px, 50px);
 								@include adaptive(767) {

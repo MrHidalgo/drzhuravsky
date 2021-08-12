@@ -10,262 +10,298 @@
     <!-- FAVICON-->
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.0/swiper-bundle.min.css" integrity="sha512-hSeEAanQ2Sh6YpHdLthlagf8R8v081TtNJX4oCxNXxwIAGOHKdzOnl270Dxrn/WHZRdwowpumZEwS16WjIi2Hw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css")-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
     <!-- STYLE :: END-->
   </head>
   <body>
-    <main data-scroll-container>
-      <div data-scroll-section>
-        <div class="main main--main" id="main" data-scroll="data-scroll">
-          <div class="main__bg">
-            <div class="main__bg-img"><img src="img/img-main-main.png" alt=""/></div>
-            <div class="main__bg-social">
-              <ul>
-                <li>
-                  <p>FOLLOW US</p>
-                </li>
-                <li><a href="#"><i class="icon-font icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-font icon-instagram"></i></a></li>
-                <li><a href="#"><i class="icon-font icon-linkedin"></i></a></li>
-              </ul>
-            </div>
+    <!-- HEADER :: START-->
+    <header class="header wow" id="header">
+      <div class="c-grid">
+        <div class="header__wrapper">
+          <div class="header__wrapper-left">
+            <div class="logo logo--header"><a class="logo__btn" href="#"><img class="logo__img" src="img/logo.svg" alt=""></a></div>
           </div>
-          <div class="c-grid">
-            <div class="main__wrapper">
-              <div class="main__block">
-                <div class="main__block-bg"></div>
-                <div class="main__block-badge">
-                  <h2 class="c-label"></h2>
-                </div>
-                <div class="main__title">
-                  <h1 class="c-title"></h1>
-                </div>
+          <div class="header__wrapper-middle"><a class="header__contact" href="#">MIAMI, FL | 732.851.1231</a></div>
+          <div class="header__wrapper-right"><a class="header__request" href="#"><span>REQUEST CONSULTATION</span><i class="icon-font icon-arrow"></i></a>
+            <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
               </div>
             </div>
           </div>
         </div>
-        <!-- SECTION :: START-->
-        <section class="stories stories--practice" id="stories" data-scroll>
-          <div class="stories__bg">
-            <div class="stories__bg-pattern"></div>
+      </div>
+    </header>
+    <!-- HEADER :: END-->
+    <main>
+      <div class="main wow main--main" id="main">
+        <div class="main__bg">
+          <div class="main__bg-img"><img src="img/img-main-main.png" alt=""/></div>
+          <div class="main__bg-social">
+            <ul>
+              <li>
+                <p>FOLLOW US</p>
+              </li>
+              <li><a href="#"><i class="icon-font icon-facebook"></i></a></li>
+              <li><a href="#"><i class="icon-font icon-instagram"></i></a></li>
+              <li><a href="#"><i class="icon-font icon-linkedin"></i></a></li>
+            </ul>
           </div>
-          <div class="c-grid">
-            <div class="stories__wrapper">
-              <div class="stories__wrapper-left">
-                <div class="stories__content">
-                  <p class="stories__label c-label">ABOUT US</p>
-                  <h2 class="stories__title c-title">OUR PRACTICE</h2>
-                  <p class="stories__desc c-desc">Dr. Ruslan Zhuravsky, or as he is commonly called by his patients, Dr. Z, possess a strong passion for Facial Plastic and Cosmetic Surgery. He is highly trained and skilled in the art and science of cosmetic surgery with innate talents that allow him to excel in the field.</p>
-                  <div class="gallery__btn c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>LEARN MORE</span></a></div>
-                </div>
+        </div>
+        <div class="c-grid">
+          <div class="main__wrapper">
+            <div class="main__block">
+              <div class="main__block-bg"></div>
+              <div class="main__block-badge">
+                <h2 class="c-label"></h2>
               </div>
-              <div class="stories__wrapper-right">
-                <div class="stories__img"><img src="img/img-practice.png" alt=""></div>
+              <div class="main__title">
+                <h1 class="c-title"></h1>
               </div>
             </div>
           </div>
-        </section>
-        <!-- SECTION :: END-->
-        <!-- SECTION :: START-->
-        <section class="me" id="me" data-scroll>
-          <div class="me__bg"><img src="img/img-bg-pattern.png" alt="">
-            <div class="c-grid">
-              <div class="me__bg-media"><img src="img/img-me.png" alt=""></div>
+        </div>
+      </div>
+      <!-- SECTION :: START-->
+      <section class="stories stories--practice" id="stories">
+        <div class="stories__bg wow animate__animated animate__fadeInUp">
+          <div class="stories__bg-pattern"></div>
+        </div>
+        <div class="c-grid">
+          <div class="stories__wrapper">
+            <div class="stories__wrapper-left">
+              <div class="stories__content">
+                <p class="stories__label c-label wow animate__animated animate__fadeInUp">ABOUT US</p>
+                <h2 class="stories__title c-title wow animate__animated animate__fadeInUp">OUR PRACTICE</h2>
+                <p class="stories__desc c-desc wow animate__animated animate__fadeInUp">Dr. Ruslan Zhuravsky, or as he is commonly called by his patients, Dr. Z, possess a strong passion for Facial Plastic and Cosmetic Surgery. He is highly trained and skilled in the art and science of cosmetic surgery with innate talents that allow him to excel in the field.</p>
+                <div class="gallery__btn c-btn__wrapper wow animate__animated animate__fadeInUp"><a class="c-btn c-btn--textDark" href="#"><span>LEARN MORE</span></a></div>
+              </div>
+            </div>
+            <div class="stories__wrapper-right">
+              <div class="stories__img wow animate__animated animate__fadeInUp"><img src="img/img-practice.png" alt=""></div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
+      <!-- SECTION :: START-->
+      <section class="me" id="me">
+        <div class="me__bg"><img src="img/img-bg-pattern.png" alt="">
           <div class="c-grid">
-            <div class="me__wrapper">
-              <div class="me__wrapper-left">
-                <div class="me__bg-media"><img src="img/img-me.png" alt=""></div>
-              </div>
-              <div class="me__wrapper-right">
-                <p class="me__label c-label">MEET THE DOCTOR</p>
+            <div class="me__bg-media wow animate__animated animate__fadeInUp"><img src="img/img-me.png" alt=""></div>
+          </div>
+        </div>
+        <div class="c-grid">
+          <div class="me__wrapper">
+            <div class="me__wrapper-left">
+              <div class="me__bg-media wow animate__animated animate__fadeInUp"><img src="img/img-me.png" alt=""></div>
+            </div>
+            <div class="me__wrapper-right">
+              <p class="me__label c-label wow animate__animated animate__fadeInUp">MEET THE DOCTOR</p>
+              <div class="me__title-wrapper wow animate__animated animate__fadeInUp">
                 <h2 class="me__title c-title">DR. Zhuravsky</h2>
-                <p class="me__desc c-desc">Dr. Ruslan Zhuravsky previously worked in Long Island, where his surgical abilities, pleasant bedside manner, and strong concern for patient well-being allowed him to quickly develop a positive reputation based purely on patient referrals.</p>
-                <div class="me__btn c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>MEET DR. ZHURAVSKY</span></a></div>
               </div>
+              <p class="me__desc c-desc wow animate__animated animate__fadeInUp">Dr. Ruslan Zhuravsky previously worked in Long Island, where his surgical abilities, pleasant bedside manner, and strong concern for patient well-being allowed him to quickly develop a positive reputation based purely on patient referrals.</p>
+              <div class="me__btn c-btn__wrapper wow animate__animated animate__fadeInUp"><a class="c-btn c-btn--textDark" href="#"><span>MEET DR. ZHURAVSKY</span></a></div>
             </div>
           </div>
-        </section>
-        <!-- SECTION :: END-->
+        </div>
+      </section>
+      <!-- SECTION :: END-->
+      <!-- SECTION :: START-->
+      <section class="procedures" id="procedures" data-scroll>
+        <div class="c-grid">
+          <div class="procedures__wrapper procedures__wrapper-1">
+            <p class="procedures__label c-label wow animate__animated animate__fadeInUp">FEATURED</p>
+            <h2 class="procedures__title c-title wow animate__animated animate__fadeInUp">PROCEDURES</h2>
+          </div>
+        </div>
         <!-- SECTION :: START-->
-        <section class="procedures" id="procedures" data-scroll>
+        <div class="procedures__wrapper procedures__wrapper-2">
+          <div class="procedures__bg wow animate__animated animate__slideInUp"><img src="img/img-bg-pattern.png" alt=""></div>
           <div class="c-grid">
-            <div class="procedures__wrapper procedures__wrapper-1">
-              <p class="procedures__label c-label">FEATURED</p>
-              <h2 class="procedures__title c-title">PROCEDURES</h2>
-            </div>
-          </div>
-          <!-- SECTION :: START-->
-          <div class="procedures__wrapper procedures__wrapper-2">
-            <div class="procedures__bg"><img src="img/img-bg-pattern.png" alt=""></div>
-            <div class="c-grid">
-              <div class="procedures__box-wrapper">
-                <div class="procedures__box-row procedures__box-row-1">
-                  <div class="procedures__box-col procedures__box-col-1">
+            <div class="procedures__box-wrapper">
+              <div class="procedures__box-row procedures__box-row-1">
+                <div class="procedures__box-col procedures__box-col-1">
+                  <div class="procedures__box-media-wrapper wow animate__animated animate__fadeInUp">
                     <div class="procedures__box-media"><img src="img/img-procedures-1.png" alt=""></div>
                   </div>
-                  <div class="procedures__box-col procedures__box-col-2">
-                    <p class="procedures__box-label c-label">SURGICAL</p>
-                    <h2 class="procedures__box-title c-title">RHINOPLASTY</h2>
-                    <p class="procedures__box-desc c-desc">Dr. Z is a board-certified facial plastic surgeon specializing in rhinoplasty. Widely considered by his patients as the best New Jersey Rhinoplasty surgeon, Dr. Z takes great pride in achieving his patients’ aesthetic and functional goals.</p>
-                    <div class="procedures__box-btn c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>LEARN MORE</span></a></div>
-                  </div>
                 </div>
-                <div class="procedures__box-row procedures__box-row-2">
-                  <div class="procedures__box-col procedures__box-col-1">
-                    <p class="procedures__box-label c-label">SURGICAL</p>
-                    <h2 class="procedures__box-title c-title">FACELIFT</h2>
-                    <p class="procedures__box-desc c-desc">The facelift is one of the most common procedures that people think of when they hear plastic surgery. This very popular procedure has been around for a long time but throughout the years has had a few of its own facelifts, and even evolved into a variety of spin-off procedures.</p>
-                    <div class="procedures__box-btn c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>LEARN MORE</span></a></div>
+                <div class="procedures__box-col procedures__box-col-2">
+                  <p class="procedures__box-label c-label wow animate__animated animate__fadeInUp">SURGICAL</p>
+                  <div class="procedures__box-title-wrapper wow animate__animated animate__fadeInUp">
+                    <div class="procedures__box-title">
+                      <h2 class="c-title">RHINOPLASTY</h2>
+                    </div>
                   </div>
-                  <div class="procedures__box-col procedures__box-col-2">
+                  <p class="procedures__box-desc c-desc wow animate__animated animate__fadeInUp">Dr. Z is a board-certified facial plastic surgeon specializing in rhinoplasty. Widely considered by his patients as the best New Jersey Rhinoplasty surgeon, Dr. Z takes great pride in achieving his patients’ aesthetic and functional goals.</p>
+                  <div class="procedures__box-btn c-btn__wrapper wow animate__animated animate__fadeInUp"><a class="c-btn c-btn--textDark" href="#"><span>LEARN MORE</span></a></div>
+                </div>
+              </div>
+              <div class="procedures__box-row procedures__box-row-2">
+                <div class="procedures__box-col procedures__box-col-1">
+                  <p class="procedures__box-label c-label wow animate__animated animate__fadeInUp">SURGICAL</p>
+                  <div class="procedures__box-title-wrapper wow animate__animated animate__fadeInUp">
+                    <div class="procedures__box-title">
+                      <h2 class="c-title">FACELIFT</h2>
+                    </div>
+                  </div>
+                  <p class="procedures__box-desc c-desc wow animate__animated animate__fadeInUp">The facelift is one of the most common procedures that people think of when they hear plastic surgery. This very popular procedure has been around for a long time but throughout the years has had a few of its own facelifts, and even evolved into a variety of spin-off procedures.</p>
+                  <div class="procedures__box-btn c-btn__wrapper wow animate__animated animate__fadeInUp"><a class="c-btn c-btn--textDark" href="#"><span>LEARN MORE</span></a></div>
+                </div>
+                <div class="procedures__box-col procedures__box-col-2">
+                  <div class="procedures__box-media-wrapper wow animate__animated animate__fadeInUp">
                     <div class="procedures__box-media"><img src="img/img-procedures-2.png" alt=""></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- SECTION :: END-->
-        </section>
+        </div>
         <!-- SECTION :: END-->
-        <!-- SECTION :: START-->
-        <section class="more" id="more" data-scroll>
-          <div class="c-grid">
-            <div class="more__header more__header-1">
-              <div>
-                <p class="more__label c-label">SPECIALTY PROCEDURES</p>
-                <h2 class="more__title c-title">SURGICAL</h2>
-              </div>
-              <div>
-                <div class="c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>MORE PROCEDURES</span></a></div>
+      </section>
+      <!-- SECTION :: END-->
+      <!-- SECTION :: START-->
+      <section class="more" id="more">
+        <div class="c-grid">
+          <div class="more__header more__header-1">
+            <div>
+              <p class="more__label c-label wow animate__animated animate__fadeInUp">SPECIALTY PROCEDURES</p>
+              <h2 class="more__title c-title wow animate__animated animate__fadeInUp">SURGICAL</h2>
+            </div>
+            <div>
+              <div class="c-btn__wrapper wow animate__animated animate__fadeInUp"><a class="c-btn c-btn--textDark" href="#"><span>MORE PROCEDURES</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="more__wrapper more__wrapper-1">
+          <div class="more__slider wow animate__animated animate__fadeInUp">
+            <div class="swiper-container moreSlider1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/img-surgical-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/img-surgical-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/img-surgical-3.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/img-surgical-4.png" alt=""></div>
               </div>
             </div>
           </div>
-          <div class="more__wrapper more__wrapper-1">
-            <div class="more__slider">
-              <div class="swiper-container moreSlider1">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="img/img-surgical-1.png" alt=""></div>
-                  <div class="swiper-slide"><img src="img/img-surgical-2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="img/img-surgical-3.png" alt=""></div>
-                  <div class="swiper-slide"><img src="img/img-surgical-4.png" alt=""></div>
+        </div>
+        <div class="c-grid">
+          <div class="more__header more__header-2">
+            <div>
+              <p class="more__label c-label wow animate__animated animate__fadeInUp">SPECIALTY PROCEDURES</p>
+              <h2 class="more__title c-title wow animate__animated animate__fadeInUp">NON-SURGICAL</h2>
+            </div>
+            <div>
+              <div class="c-btn__wrapper wow animate__animated animate__fadeInUp"><a class="c-btn c-btn--textDark" href="#"><span>MORE PROCEDURES</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="more__wrapper more__wrapper-2">
+          <div class="more__slider wow animate__animated animate__fadeInUp">
+            <div class="swiper-container moreSlider2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/img-non-surgical-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/img-non-surgical-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/img-non-surgical-3.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/img-non-surgical-4.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
+      <!-- SECTION :: START-->
+      <section class="gallery" id="gallery">
+        <div class="gallery__bg wow animate__animated animate__fadeInUp"><img src="img/img-gallery.png" alt=""></div>
+        <div class="c-grid">
+          <div class="gallery__wrapper">
+            <div>
+              <p class="gallery__label c-label wow animate__animated animate__fadeInUp">BEFORE & AFTERS</p>
+              <h2 class="gallery__title c-title c-title--white wow animate__animated animate__fadeInUp">Photo Gallery</h2>
+              <p class="gallery__desc c-desc c-desc--white wow animate__animated animate__fadeInUp">Feel free to look through Dr. Ruslan Zhuravsky’s gallery to view his work and artistry on facial procedures like Rhinoplasty, Face Lift, and more.</p>
+              <div class="gallery__btn c-btn__wrapper wow animate__animated animate__fadeInUp"><a class="c-btn" href="#"><span>READ MORE</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
+      <!-- SECTION :: START-->
+      <section class="stories" id="stories">
+        <div class="stories__bg wow animate__animated animate__fadeInUp">
+          <div class="stories__bg-pattern"></div>
+        </div>
+        <div class="c-grid">
+          <div class="stories__wrapper">
+            <div class="stories__wrapper-left">
+              <div class="stories__content">
+                <p class="stories__label c-label wow animate__animated animate__fadeInUp">Real Patients. Real Results.</p>
+                <div class="stories__title wow animate__animated animate__fadeInUp">
+                  <h2 class="c-title">PATIENT STORIES</h2>
                 </div>
+                <p class="stories__desc c-desc wow animate__animated animate__fadeInUp">Dr. Z highlights one of his patient’s each month. These patients receive a professional photoshoot to showcase their incredible results. Take a look to see the aesthetic transformation possible at Z Facial Plastics.</p>
+                <div class="gallery__btn c-btn__wrapper wow animate__animated animate__fadeInUp"><a class="c-btn c-btn--textDark" href="#"><span>READ MORE</span></a></div>
               </div>
             </div>
-          </div>
-          <div class="c-grid">
-            <div class="more__header more__header-2">
-              <div>
-                <p class="more__label c-label">SPECIALTY PROCEDURES</p>
-                <h2 class="more__title c-title">NON-SURGICAL</h2>
-              </div>
-              <div>
-                <div class="c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>MORE PROCEDURES</span></a></div>
-              </div>
+            <div class="stories__wrapper-right">
+              <div class="stories__img wow animate__animated animate__fadeInUp"><img src="img/img-stories.png" alt=""></div>
             </div>
           </div>
-          <div class="more__wrapper more__wrapper-2">
-            <div class="more__slider">
-              <div class="swiper-container moreSlider2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="img/img-non-surgical-1.png" alt=""></div>
-                  <div class="swiper-slide"><img src="img/img-non-surgical-2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="img/img-non-surgical-3.png" alt=""></div>
-                  <div class="swiper-slide"><img src="img/img-non-surgical-4.png" alt=""></div>
-                </div>
-              </div>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
+      <!-- SECTION :: START-->
+      <section class="request wow" id="request">
+        <div class="request__bg"></div>
+        <div class="request__wrapper"><img class="request__wrapper-bg" src="img/img-request-bg.png">
+          <div class="request__content">
+            <div class="request__content-bg"></div>
+            <div class="request__title">
+              <h2 class="c-title">Request Consultation</h2>
             </div>
+            <p class="request__desc c-desc">Get a private and personalized consultation with Dr. Z in his new beautiful practice in Florida.</p>
           </div>
-        </section>
-        <!-- SECTION :: END-->
-        <!-- SECTION :: START-->
-        <section class="gallery" id="gallery" data-scroll>
-          <div class="gallery__bg"><img src="img/img-gallery.png" alt=""></div>
-          <div class="c-grid">
-            <div class="gallery__wrapper">
-              <div>
-                <p class="gallery__label c-label">BEFORE & AFTERS</p>
-                <h2 class="gallery__title c-title c-title--white">Photo Gallery</h2>
-                <p class="gallery__desc c-desc c-desc--white">Feel free to look through Dr. Ruslan Zhuravsky’s gallery to view his work and artistry on facial procedures like Rhinoplasty, Face Lift, and more.</p>
-                <div class="gallery__btn c-btn__wrapper"><a class="c-btn" href="#"><span>READ MORE</span></a></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- SECTION :: END-->
-        <!-- SECTION :: START-->
-        <section class="stories" id="stories" data-scroll data-scroll-offset="20%">
-          <div class="stories__bg">
-            <div class="stories__bg-pattern"></div>
-          </div>
-          <div class="c-grid">
-            <div class="stories__wrapper">
-              <div class="stories__wrapper-left">
-                <div class="stories__content">
-                  <p class="stories__label c-label">Real Patients. Real Results.</p>
-                  <div class="stories__title">
-                    <h2 class="c-title">PATIENT STORIES</h2>
-                  </div>
-                  <p class="stories__desc c-desc">Dr. Z highlights one of his patient’s each month. These patients receive a professional photoshoot to showcase their incredible results. Take a look to see the aesthetic transformation possible at Z Facial Plastics.</p>
-                  <div class="gallery__btn c-btn__wrapper"><a class="c-btn c-btn--textDark" href="#"><span>READ MORE</span></a></div>
-                </div>
-              </div>
-              <div class="stories__wrapper-right">
-                <div class="stories__img"><img src="img/img-stories.png" alt=""></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- SECTION :: END-->
-        <!-- SECTION :: START-->
-        <section class="request" id="request" data-scroll>
-          <div class="request__bg"></div>
-          <div class="request__wrapper">
-            <div class="request__content">
-              <h2 class="request__title c-title">Request Consultation</h2>
-              <p class="request__desc c-desc">Get a private and personalized consultation with Dr. Z in his new beautiful practice in Florida.</p>
-            </div>
-          </div>
-        </section>
-        <!-- SECTION :: END-->
-        <!-- FOOTER :: START-->
-        <footer class="footer" id="footer" data-scroll data-scroll-offset="10%">
-          <div class="c-grid">
-            <div class="footer__wrapper">
-              <div class="footer__wrapper-left">
-                <div class="logo logo--footer"><a class="logo__btn" href="#"><img class="logo__img" src="img/logo.svg" alt=""></a></div>
-              </div>
-              <div class="footer__wrapper-right">
-                <div class="footer__social">
-                  <ul>
-                    <li><a href="#"><i class="icon-font icon-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon-font icon-instagram"></i></a></li>
-                    <li><a href="#"><i class="icon-font icon-linkedin"></i></a></li>
-                  </ul>
-                </div>
-                <div class="footer__nav">
-                  <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PROCEDURES</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                  </ul>
-                </div>
-                <div class="footer__copyrights">
-                  <p>Copyright © 2021 Dr. Ruslan Zhuravsky. All Rights Reserved.</p>
-                  <p><a href='#'>Sitemap</a> | <a href='#'>HIPAA Privacy Policy</a> | <a href='#'>Privacy Policy</a> | <a href='#'>Terms & Conditions</a></p>
-                  <p>Medical Marketing by <strong>MRKTMADE</strong></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-- FOOTER :: END-->
-      </div>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
     </main>
+    <!-- FOOTER :: START-->
+    <footer class="footer wow" id="footer">
+      <div class="c-grid">
+        <div class="footer__wrapper">
+          <div class="footer__wrapper-left">
+            <div class="logo logo--footer"><a class="logo__btn" href="#"><img class="logo__img" src="img/logo.svg" alt=""></a></div>
+          </div>
+          <div class="footer__wrapper-right">
+            <div class="footer__social">
+              <ul>
+                <li><a href="#"><i class="icon-font icon-facebook"></i></a></li>
+                <li><a href="#"><i class="icon-font icon-instagram"></i></a></li>
+                <li><a href="#"><i class="icon-font icon-linkedin"></i></a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROCEDURES</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="footer__copyrights">
+              <p>Copyright © 2021 Dr. Ruslan Zhuravsky. All Rights Reserved.</p>
+              <p><a href='#'>Sitemap</a> | <a href='#'>HIPAA Privacy Policy</a> | <a href='#'>Privacy Policy</a> | <a href='#'>Terms & Conditions</a></p>
+              <p>Medical Marketing by <strong>MRKTMADE</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER :: END-->
     <!-- SECTION :: START-->
     <section class="menu" id="menu" mobile-block-js>
       <div class="menu__overlay"></div>
@@ -336,13 +372,15 @@
       </div>
     </section>
     <!-- SECTION :: END-->
+    <!-- SCRIPT :: START-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.0/swiper-bundle.min.js" integrity="sha512-fRxU3fhg7jWn77+UqkAPkNmnpFAA0IwxT8nysPJ2++WcE0jvaTe7OxC5OH1wiA/grOqgeZreu35nMK/S0qmdkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous" referrerpolicy="no-referrer")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js")-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--script(src="js/vendor.js")-->
+    <script src="js/app.js"></script>
+    <!-- SCRIPT :: END-->
   </body>
-  <!-- SCRIPT :: START-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.0/swiper-bundle.min.js" integrity="sha512-fRxU3fhg7jWn77+UqkAPkNmnpFAA0IwxT8nysPJ2++WcE0jvaTe7OxC5OH1wiA/grOqgeZreu35nMK/S0qmdkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer")-->
-  <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous" referrerpolicy="no-referrer")-->
-  <script src="js/vendor.js"></script>
-  <script src="js/app.js"></script>
-  <!-- SCRIPT :: END-->
 </html>

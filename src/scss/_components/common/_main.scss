@@ -3,7 +3,7 @@
 .main {
 	position: relative;
 
-	&.is-inview {
+	&.animated {
 		.main {
 			&__bg {
 				&:after {
@@ -294,7 +294,6 @@
 		&-bg {
 			content: '';
 			z-index: -1;
-			opacity: 0;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -302,6 +301,7 @@
 			height: 100%;
 			backdrop-filter: blur(30px);
 			background-color: rgba(255, 255, 255, 0.15);
+			opacity: 0;
 			transition: opacity 0s cubic-bezier(.215,.61,.355,1);
 		}
 

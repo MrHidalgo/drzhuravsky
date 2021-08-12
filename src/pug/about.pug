@@ -7,16 +7,14 @@ extends shared/_layout
 
 block content
 
-  main(data-scroll-container)
-    div(data-scroll-section)
+  main
 
-      +mainSection('about', 'img-main-about.png', 'ABOUT', 'OUR PRACTICE')
+    +mainSection('about', 'img-main-about.png', 'ABOUT', 'OUR PRACTICE')
 
-      include components/about/_about
+    include components/about/_about
 
-      include components/common/_me
-      include components/common/_stories
-      include components/common/_video
-      include components/common/_gallery
-      include components/common/_request
-      include components/common/_footer
+    include components/common/_me
+    include components/common/_stories
+    include components/common/_video
+    include components/common/_gallery
+    include components/common/_request

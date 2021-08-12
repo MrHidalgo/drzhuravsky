@@ -3,19 +3,19 @@ ProjectTitle: DrZhuravsky
 PageList:
 - file: index.html
   titleName: Home
-  ready: 95
+  ready: 100
 - file: meet.html
   titleName: Meet The Doctor
-  ready: 95
+  ready: 100
 - file: about.html
   titleName: About
-  ready: 95
+  ready: 100
 - file: procedures.html
   titleName: Procedures
-  ready: 95
+  ready: 100
 - file: gallery.html
   titleName: Gallery
-  ready: 95
+  ready: 100
 - file: contact.html
   titleName: Contact
-  ready: 95
+  ready: 100

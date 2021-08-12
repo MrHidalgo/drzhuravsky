@@ -7,16 +7,11 @@ extends shared/_layout
 
 block content
 
-  main(data-scroll-container)
-    div#main(data-scroll-section)
+  main
 
-      include components/common/_header
+    +mainSection('contact', 'img-main-contact.png', 'QUESTIONS & INQUIRIES', 'CONTACT')
 
-      +mainSection('contact', 'img-main-contact.png', 'QUESTIONS & INQUIRIES', 'CONTACT')
+    include components/contact/_form
+    include components/contact/_address
 
-      include components/contact/_form
-      include components/contact/_address
-
-      include components/common/_stories
-      include components/common/_footer
-
+    include components/common/_stories

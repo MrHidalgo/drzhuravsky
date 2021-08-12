@@ -6,12 +6,11 @@ pageClassName: p-gallery
 extends shared/_layout
 
 block content
-  main(data-scroll-container)
-    div(data-scroll-section)
 
-      +mainSection('gallery', 'img-main-gallery.png', 'BEFORE & AFTERS', 'Gallery')
+  main
 
-      include components/gallery/_results
+    +mainSection('gallery', 'img-main-gallery.png', 'BEFORE & AFTERS', 'Gallery')
 
-      include components/common/_request
-      include components/common/_footer
+    include components/gallery/_results
+
+    include components/common/_request

@@ -10,6 +10,67 @@
 		margin-top: 30px;
 	}
 
+	&.animated {
+		.request {
+			&__bg {
+				opacity: 1;
+				transform: none;
+				transition-duration: 1s;
+				transition-delay: 1.25s;
+			}
+
+			&__wrapper {
+				&-bg {
+					opacity: 1;
+					transform: none;
+					transition-duration: 2s;
+				}
+			}
+
+			&__content {
+				&:before,
+				&:after {
+					width: 100%;
+					height: 100%;
+				}
+
+				&:before {
+					border-top-color: #c09d55;
+					border-right-color: #c09d55;
+					transition-duration: 1s;
+				}
+
+				&:after {
+					border-bottom-color: #c09d55;
+					border-left-color: #c09d55;
+					transition-duration: 1s;
+				}
+
+				&-bg {
+					opacity: 1;
+					transition-duration: 1s;
+					transition-delay: 1.25s;
+				}
+			}
+
+			&__title {
+				h2 {
+					opacity: 1;
+					transform: none;
+					transition-duration: 1.25s;
+					transition-delay: 1.5s;
+				}
+			}
+
+			&__desc {
+				opacity: 1;
+				transform: translateY(0);
+				transition-duration: 1.25s;
+				transition-delay: 2s;
+			}
+		}
+	}
+
 	&__bg {
 		z-index: 0;
 		position: absolute;
@@ -29,6 +90,10 @@
 			width: calc(100% - 40px);
 			border-width: 5px;
 		}
+		opacity: 0;
+		transform-origin: center;
+		transform: scaleX(2.3);
+		transition: opacity 0s cubic-bezier(.215,.61,.355,1), transform 0s cubic-bezier(.215,.61,.355,1);
 	}
 
 	&__wrapper {
@@ -36,16 +101,26 @@
 		position: relative;
 		//padding-top: 235px;
 		//padding-bottom: 235px;
-		background-color: #e5e5e5;
-		background-image: url('../img/img-request-bg.png');
-		background-repeat: no-repeat;
-		background-position: center bottom;
-		background-size: cover;
+		//background-color: #e5e5e5;
+		//background-image: url('../img/img-request-bg.png');
+		//background-repeat: no-repeat;
+		//background-position: center bottom;
+		//background-size: cover;
 		@include fluid(padding-top, 320px, 1920px, 100px, 235px);
 		@include fluid(padding-bottom, 320px, 1920px, 100px, 235px);
+
+		&-bg {
+			@extend %imageResCoverAbs;
+			opacity: 0;
+			transform-origin: center;
+			transform: translateY(50%) scale(1.3);
+			transition: opacity 0s cubic-bezier(.215,.61,.355,1), transform 0s cubic-bezier(.215,.61,.355,1);
+		}
 	}
 
 	&__content {
+		z-index: 5;
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -57,9 +132,9 @@
 		//padding-bottom: 40px;
 		margin-left: auto;
 		margin-right: auto;
-		border: 5px solid #c09d55;
-		backdrop-filter: blur(30px);
-		background-color: rgba(255, 255, 255, 0.15);
+		//border: 5px solid #c09d55;
+		//backdrop-filter: blur(30px);
+		//background-color: rgba(255, 255, 255, 0.15);
 		@include fluid(max-width, 320px, 1920px, 290px, 1206px);
 		@include fluid(padding-top, 320px, 1920px, 20px, 40px);
 		@include fluid(padding-bottom, 320px, 1920px, 20px, 40px);
@@ -68,15 +143,68 @@
 			padding-left: 15px;
 			padding-right: 15px;
 		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border: 5px solid transparent;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+			transition: width 0s cubic-bezier(.215,.61,.355,1), height 0s cubic-bezier(.215,.61,.355,1) 1s;
+		}
+
+		&:after {
+			bottom: 0;
+			right: 0;
+			transition: width 0s cubic-bezier(.215,.61,.355,1), height 0s cubic-bezier(.215,.61,.355,1) 1s;
+		}
+
+		&-bg {
+			content: '';
+			z-index: -1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			backdrop-filter: blur(30px);
+			background-color: rgba(255, 255, 255, 0.15);
+			opacity: 0;
+			transition: opacity 0s cubic-bezier(.215,.61,.355,1);
+		}
+	}
+
+	&__title,
+	&__desc {
+		z-index: 2;
+		position: relative;
 	}
 
 	&__title {
-		text-align: center;
-		@include fluid(font-size, 320px, 1920px, 35px, 80px);
+		perspective: 600px;
+
+		h2 {
+			text-align: center;
+			@include fluid(font-size, 320px, 1920px, 35px, 80px);
+			opacity: 0;
+			transform-origin: center top;
+			transform-style: preserve-3d;
+			transform: translateY(125%) rotateX(-80deg);
+			transition: opacity 0s cubic-bezier(.215,.61,.355,1), transform 0s cubic-bezier(.215,.61,.355,1);
+		}
 	}
 
 	&__desc {
 		text-align: center;
+		opacity: 0;
+		transform: translateY(75%);
+		transition: opacity 0s cubic-bezier(.215,.61,.355,1), transform 0s cubic-bezier(.215,.61,.355,1);
 	}
 }
 

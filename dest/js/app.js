@@ -52,6 +52,36 @@ var initHamburger = function initHamburger() {
 };
 
 /**
+ * @name initHeaderFixed
+ *
+ * @description Fixing the site header in the scrolling page.
+ */
+var initHeaderFixed = function initHeaderFixed() {
+
+	var lastKnownScrollPosition = 0;
+	var ticking = false;
+
+	function doSomething(scrollPos) {
+		var headerElement = $('.header');
+
+		scrollPos > 150 ? headerElement.addClass("is-fixed") : headerElement.removeClass("is-fixed");
+	}
+
+	document.addEventListener('scroll', function (e) {
+		lastKnownScrollPosition = window.scrollY;
+
+		if (!ticking) {
+			window.requestAnimationFrame(function () {
+				doSomething(lastKnownScrollPosition);
+				ticking = false;
+			});
+
+			ticking = true;
+		}
+	});
+};
+
+/**
  * @name initPreventBehavior
  *
  * @description
@@ -130,7 +160,9 @@ var initSwiper = function initSwiper() {
 /**
  * @description Window on load.
  */
-window.addEventListener('load', function (ev) {});
+window.addEventListener('load', function (ev) {
+	initHeaderFixed();
+});
 
 /**
  * @description Window on resize.
@@ -140,7 +172,9 @@ window.addEventListener('resize', function (ev) {});
 /**
  * @description Window on scroll.
  */
-window.addEventListener('scroll', function (ev) {});
+window.addEventListener('scroll', function (ev) {
+	initHeaderFixed();
+});
 
 /**
  * @description Document DOM ready.
@@ -161,7 +195,7 @@ window.addEventListener('scroll', function (ev) {});
 			getSpeed: true,
 			getDirection: true,
 			useKeyboard: true,
-			lerp: 0.055,
+			lerp: 0.1,
 			multiplier: 1,
 			firefoxMultiplier: 50,
 			touchMultiplier: 2.5,
@@ -223,6 +257,33 @@ window.addEventListener('scroll', function (ev) {});
 		});
 	};
 
+	var scrollViewPortAnimation = function scrollViewPortAnimation() {
+		// AOS.init({
+		// 	offset: 200,
+		// 	delay: 50,
+		// 	duration: 1000,
+		// 	easing: 'ease-in-out-cubic',
+		// 	mirror: false,
+		// 	once: true
+		// });
+
+		var wow = new WOW({
+			boxClass: 'wow', // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset: 50, // distance to the element when triggering the animation (default is 0)
+			mobile: true, // trigger animations on mobile devices (default is true)
+			live: true, // act on asynchronously loaded content (default is true)
+			callback: function callback(box) {
+				// the callback is fired every time an animation is started
+				// the argument that is passed in is the DOM node being animated
+			},
+			scrollContainer: null, // optional scroll container selector, otherwise use window,
+			resetAnimation: true // reset animation on end (default is true)
+		});
+
+		wow.init();
+	};
+
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -244,18 +305,19 @@ window.addEventListener('scroll', function (ev) {});
 
 		// callback
 		menuToggle();
+		scrollViewPortAnimation();
 		// ==========================================
 
-		setTimeout(function () {
-			$('body').animate({ opacity: 1 }, 750);
-			$('header').addClass('is-animate');
-
-			setTimeout(function () {
-				$('header').removeClass('is-animate').addClass('is-show');
-			}, 1000);
-
-			locoScrollCB();
-		}, 500);
+		// setTimeout(() => {
+		// 	$('body').animate({opacity: 1}, 750);
+		// 	$('header').addClass('is-animate');
+		//
+		// 	setTimeout(() => {
+		// 		$('header').removeClass('is-animate').addClass('is-show');
+		// 	}, 1000);
+		//
+		// 	locoScrollCB();
+		// }, 500);
 	};
 	initNative();
 })();

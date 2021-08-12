@@ -1,12 +1,13 @@
 // SECTION :: START
 
-section#me.me(data-scroll)
+section#me.me
 
   .me__bg
     img(src="img/img-bg-pattern.png" alt="")
 
     .c-grid
-      .me__bg-media
+
+      .me__bg-media.wow.animate__animated.animate__fadeInUp
         img(src="img/img-me.png" alt="")
 
 
@@ -14,16 +15,17 @@ section#me.me(data-scroll)
     .me__wrapper
       .me__wrapper-left
 
-        .me__bg-media
+        .me__bg-media.wow.animate__animated.animate__fadeInUp
           img(src="img/img-me.png" alt="")
 
       .me__wrapper-right
 
-        p.me__label.c-label MEET THE DOCTOR
-        h2.me__title.c-title DR. Zhuravsky
-        p.me__desc.c-desc Dr. Ruslan Zhuravsky previously worked in Long Island, where his surgical abilities, pleasant bedside manner, and strong concern for patient well-being allowed him to quickly develop a positive reputation based purely on patient referrals.
+        p.me__label.c-label.wow.animate__animated.animate__fadeInUp MEET THE DOCTOR
+        .me__title-wrapper.wow.animate__animated.animate__fadeInUp
+          h2.me__title.c-title DR. Zhuravsky
+        p.me__desc.c-desc.wow.animate__animated.animate__fadeInUp Dr. Ruslan Zhuravsky previously worked in Long Island, where his surgical abilities, pleasant bedside manner, and strong concern for patient well-being allowed him to quickly develop a positive reputation based purely on patient referrals.
 
-        .me__btn.c-btn__wrapper
+        .me__btn.c-btn__wrapper.wow.animate__animated.animate__fadeInUp
           a.c-btn.c-btn--textDark(href="#")
             span MEET DR. ZHURAVSKY
 
